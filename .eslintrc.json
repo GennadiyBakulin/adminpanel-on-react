@@ -4,14 +4,19 @@
         "es2021": true
     },
     "extends": [
-        "react-app",
+        "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
         "airbnb",
         "plugin:prettier/recommended"
     ],
+    "parser": "@babel/eslint-parser",
     "overrides": [
     ],
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -23,6 +28,8 @@
         "react/jsx-uses-react": ["off"],
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "prettier/prettier": "error",
+        "react/prop-types": 0
     }
 }
