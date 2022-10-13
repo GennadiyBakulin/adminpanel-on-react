@@ -20,9 +20,9 @@ export default function App() {
       <div className="text-day-night">Checkbox и Radio</div>
                <div className="checkbox-radio-wrapper">
         <Checkbox />
-        <Radio />
+                  <Radio />
       </div>
-      <div className="text-day-night">
+                  <div className="text-day-night">
         Dropdowns
         <Dropdowns />
       </div>
