@@ -8,10 +8,10 @@ import { Dropdowns } from "./shared/Dropdown/Dropdown";
 
 export default function App() {
   return (
-    <div>
+              <div>
       <div className="text-day-night">
         Input
-        <Inputs />
+            <Inputs />
       </div>
       <div className="text-day-night">
         Searchbar
