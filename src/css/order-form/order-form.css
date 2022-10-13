@@ -1,0 +1,161 @@
+.order-form {
+  /*display: none;*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30rem;
+  height: 49rem;
+  background: var(--color-style-white);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.15),
+    0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.order-form__card-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.order-form__card-orders-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.order-form__card-orders-body-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: 1px solid var(--color-style-white-blue);
+  color: var(--color-style-black);
+}
+
+.order-form__card-orders-cell-article {
+  padding: 0.5rem;
+  text-align: left;
+  min-width: 6rem;
+}
+
+.order-form__card-orders-cell-name {
+  padding: 0.5rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.order-form__card-orders-cell-price {
+  padding: 0.5rem;
+  text-align: left;
+  min-width: 6rem;
+}
+
+.order-form__card-orders-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 2rem;
+  background: var(--color-style-white-blue);
+}
+
+.order-form__card-orders-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+  width: 100%;
+  height: 2rem;
+  background: var(--color-style-blue);
+  color: var(--color-style-white-blue);
+}
+
+.order-form__content {
+  display: flex;
+  align-items: flex-start;
+  height: 42.5rem;
+  overflow-y: auto;
+  margin-right: 0.25rem;
+}
+
+.order-form__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.order-form__error-message {
+  color: var(--color-style-red);
+}
+
+.order-form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  height: 3rem;
+  background: var(--color-style-white-blue);
+  width: 100%;
+}
+
+.order-form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 0.5rem;
+  height: 3.5rem;
+  background: var(--color-style-blue);
+  color: var(--color-style-light-blue);
+}
+
+.order-form__header .button .icon-large {
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
+}
+
+.order-form__order-amount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  color: var(--color-style-black);
+}
+
+.order-form__save-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.order-form__order-status {
+  position: relative;
+  width: 100%;
+}
+
+.order-form__order-status .multiple-status {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+}
+
+.order-form__order-status .input:hover + .multiple-status {
+  display: flex;
+}
+
+.order-form__order-status .input_status-order .input__field .icon {
+  transform: rotate(90deg);
+}
+
+.order-form__order-status .input_status-order:hover .input__field .icon {
+  transform: rotate(180deg);
+}

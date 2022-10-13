@@ -1,2 +1,3 @@
-Джабраил проверьте данный проект на правильность подключения плагинов eslint prettier husky lint-staged.
-И настройку их взаимодействия.
+"*.(js|jsx)": ["npm run prettier", "npm run lint:fix"]
+
+npx lint-staged

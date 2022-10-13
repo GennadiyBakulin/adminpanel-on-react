@@ -1,0 +1,4 @@
+.icon_color-theme-green {
+  stroke: var(--color-style-green);
+  fill: var(--color-style-green);
+}

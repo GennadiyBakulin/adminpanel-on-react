@@ -1,25 +1,35 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { Buttons } from "./shared/Button/Button";
+import { Inputs } from "./shared/Input/Input";
+import "./css/style.css";
+import { Searchbar } from "./shared/Searchbar/Searchbar";
+import { Checkbox } from "./shared/Checkbox/Checkbox";
+import { Radio } from "./shared/Radio/Radio";
+import { Dropdowns } from "./shared/Dropdown/Dropdown";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="text-day-night">
+        Input
+        <Inputs />
+      </div>
+      <div className="text-day-night">
+        Searchbar
+        <Searchbar />
+      </div>
+      <div className="text-day-night">Checkbox и Radio</div>
+      <div className="checkbox-radio-wrapper">
+        <Checkbox />
+        <Radio />
+      </div>
+      <div className="text-day-night">
+        Dropdowns
+        <Dropdowns />
+      </div>
+      <div className="text-day-night">
+        Buttons
+        <Buttons />
+      </div>
     </div>
   );
 }
-
-export default App;

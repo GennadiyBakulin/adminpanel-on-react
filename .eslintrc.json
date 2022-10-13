@@ -29,7 +29,14 @@
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
         "no-shadow": "off",
-        "prettier/prettier": "error",
-        "react/prop-types": 0
+        "prettier/prettier": ["error",{
+            "endOfLine": "auto"}
+        ],
+        "react/prop-types": 0,
+        "import/prefer-default-export": 0,
+        "react/function-component-definition": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "react/button-has-type": "off",
+        "spaced-comment": "off"
     }
 }
