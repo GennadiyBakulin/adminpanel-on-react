@@ -21,6 +21,12 @@
     "prettier": "prettier --write src/*.jsx",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

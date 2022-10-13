@@ -15,10 +15,10 @@ export default function App() {
       </div>
       <div className="text-day-night">
         Searchbar
-        <Searchbar />
+                      <Searchbar />
       </div>
       <div className="text-day-night">Checkbox и Radio</div>
-      <div className="checkbox-radio-wrapper">
+               <div className="checkbox-radio-wrapper">
         <Checkbox />
         <Radio />
       </div>
