@@ -1,14 +1,15 @@
-import { Buttons } from "./shared/Button/Button";
-import { Inputs } from "./shared/Input/Input";
+import React from "react";
+import { Buttons } from "./common/components/Button/Button";
+import { Inputs } from "./common/components/Input/Input";
 import "./css/style.css";
-import { Searchbar } from "./shared/Searchbar/Searchbar";
-import { Checkbox } from "./shared/Checkbox/Checkbox";
-import { Radio } from "./shared/Radio/Radio";
-import { Dropdowns } from "./shared/Dropdown/Dropdown";
+import { Searchbar } from "./common/components/Searchbar/Searchbar";
+import { Checkbox } from "./common/components/Checkbox/Checkbox";
+import { Radio } from "./common/components/Radio/Radio";
+import { Dropdowns } from "./common/components/Dropdown/Dropdown";
 
 export default function App() {
   return (
-                  <div>
+    <div>
       <div className="text-day-night">
         Input
         <Inputs />

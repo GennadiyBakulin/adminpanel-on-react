@@ -93,3 +93,7 @@
   stroke: var(--color-style-light-blue);
   fill: var(--color-style-light-blue);
 }
+.input .icon{
+  stroke: var(--color-style-black);
+  fill: var(--color-style-black);
+}

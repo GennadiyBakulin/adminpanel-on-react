@@ -1,4 +1,4 @@
-import "../../css/radio/radio.css";
+import "../../../css/radio/radio.css";
 
 export const Radio = function Radio() {
   return (

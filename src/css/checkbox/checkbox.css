@@ -2,10 +2,11 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .checkbox__area {
   appearance: none;
+  margin: 0;
   width: 1rem;
   height: 1rem;
   background-color: var(--color-style-white);
@@ -25,9 +26,9 @@
 }
 .checkbox__icon {
   position: absolute;
-  width: 1rem;
   top: 0;
   left: 0;
+  width: 1rem;
   fill: var(--color-style-white);
   opacity: 0;
 }
