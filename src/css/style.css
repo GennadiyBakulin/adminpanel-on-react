@@ -1,4 +1,4 @@
-@import "icon/icon.css";
+@import "../common/components/Icon/Icon.css";
 @import "header/header.css";
 @import "button-switcher-theme/button-switcher-theme.css";
 @import "search/search.css";

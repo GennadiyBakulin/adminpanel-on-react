@@ -16,7 +16,9 @@ export default function App() {
       </div>
       <div className="text-day-night">
         Searchbar
+        <div className='searchbar-wrapper'>
         <Searchbar />
+          </div>
       </div>
       <div className="text-day-night">Checkbox и Radio</div>
       <div className="checkbox-radio-wrapper">
@@ -29,7 +31,9 @@ export default function App() {
       </div>
       <div className="text-day-night">
         Buttons
+        <div className="buttons-wrapper">
         <Buttons />
+        </div>
       </div>
     </div>
   );

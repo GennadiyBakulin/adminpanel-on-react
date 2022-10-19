@@ -1,0 +1,35 @@
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+.icon_size-large {
+  width: 1.5rem;
+}
+.icon_color-style-black {
+  fill: var(--color-style-black);
+  stroke: var(--color-style-black);
+}
+.icon_color-style-blue {
+  stroke: var(--color-style-blue);
+  fill: var(--color-style-blue);
+}
+.icon_color-style-green {
+  stroke: var(--color-style-green);
+  fill: var(--color-style-green);
+}
+.icon_color-style-light-blue {
+  stroke: var(--color-style-light-blue);
+  fill: var(--color-style-light-blue);
+}
+.icon_color-style-orange {
+  stroke: var(--color-style-orange);
+  fill: var(--color-style-orange);
+}
+.icon_color-style-white {
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
+}
+.icon_color-style-white-day-night {
+  stroke: var(--color-style-white-day-night);
+  fill: var(--color-style-white-day-night);
+}

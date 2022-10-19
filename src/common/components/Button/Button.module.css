@@ -7,67 +7,46 @@
   cursor: pointer;
   background-color: transparent;
 }
-
 .button_theme-blue {
   border-radius: 0.25rem;
   background-color: var(--color-style-blue);
   color: var(--color-style-white);
-}
-
-.button_theme-blue .icon {
   stroke: var(--color-style-white);
   fill: var(--color-style-white);
 }
-
 .button_theme-blue-transparent {
   color: var(--color-style-blue);
-}
-
-.button_theme-blue-transparent .icon {
   stroke: var(--color-style-blue);
   fill: var(--color-style-blue);
 }
-
 .button_theme-black-transparent {
   color: var(--color-style-black);
-}
-
-.button_theme-black-transparent .icon {
   fill: var(--color-style-black);
   stroke: var(--color-style-black);
 }
-
+.button_theme-red {
+  background-color: var(--color-style-red);
+  border-radius: 0.25rem;
+  color: var(--color-style-white);
+  stroke: var(--color-style-white-day-night);
+  fill: var(--color-style-white-day-night);
+}
 .button_size_medium {
   height: 2rem;
   padding: 0.5rem 1rem;
   gap: 0.5rem;
 }
-
 .button_size_small {
   height: 1.5rem;
   padding: 0.25rem 0.5rem;
   gap: 0.25rem;
 }
-
 .button_size_medium.button_icon-only {
   padding: 0.5rem;
 }
-
 .button_size_small.button_icon-only {
   padding: 0.25rem;
 }
-
-.button_theme-red {
-  background-color: var(--color-style-red);
-  border-radius: 0.25rem;
-  color: var(--color-style-white);
-}
-
-.button_theme-red .icon {
-  stroke: var(--color-style-white-day-night);
-  fill: var(--color-style-white-day-night);
-}
-
 .button_large {
   height: 2rem;
 }

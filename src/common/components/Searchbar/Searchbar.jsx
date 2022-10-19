@@ -1,15 +1,14 @@
 import React from "react";
-import "../../../css/searchbar/searchbar.css";
+import style from "./Searchbar.module.css";
 import { Icon } from "../Icon/Icon";
 
 export const Searchbar = function Searchbar() {
   return (
-    <div>
-      <div className="searchbar-wrapper">
-        <div className="searchbar">
-          <Icon className="searchbar__icon-search" name="search" />
+    <>
+        <div className={ style.searchbar }>
+          <Icon className={ style['searchbar__icon-search'] } name="search" />
           <input
-            className="searchbar__text"
+            className={style.searchbar__text}
             type="text"
             placeholder="Номер заказа или ФИО"
           />
@@ -20,10 +19,10 @@ export const Searchbar = function Searchbar() {
             <Icon className="icon" name="x_medium" />
           </button>
         </div>
-        <div className="searchbar searchbar_filled">
-          <Icon className="searchbar__icon-search" name="search" />
+        <div className={`${style.searchbar} ${style.searchbar_filled}`}>
+          <Icon className={ style['searchbar__icon-search'] } name="search" />
           <input
-            className="searchbar__text"
+            className={style.searchbar__text}
             type="text"
             placeholder="Номер заказа или ФИО"
             value="50744"
@@ -35,7 +34,6 @@ export const Searchbar = function Searchbar() {
             <Icon className="icon" name="x_medium" />
           </button>
         </div>
-      </div>
-    </div>
+    </>
   );
 };
