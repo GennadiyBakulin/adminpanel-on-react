@@ -28,4 +28,4 @@ export const icons = {
   v_arrow: IcoVArrow,
   x_large: IcoXLarge,
   x_medium: IcoXMedium,
-}
+};

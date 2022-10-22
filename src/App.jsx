@@ -19,15 +19,16 @@ export default function App() {
       <div className="text-day-night">
         Searchbar
         <div className="searchbar-wrapper">
-          <Searchbar />
+          <Searchbar placeholder="Номер заказа или ФИО" />
+          <Searchbar filled placeholder="Номер заказа или ФИО" />
         </div>
       </div>
       <div className="text-day-night">Checkbox и Radio</div>
       <div className="checkbox-radio-wrapper">
-        <Checkbox name="checkbox-button" />
+        <Checkbox name="checkbox-button" checked />
         <Checkbox name="checkbox-button" />
         <Radio name="radio-button" />
-        <Radio name="radio-button" />
+        <Radio name="radio-button" checked />
       </div>
       <div className="text-day-night">
         Buttons

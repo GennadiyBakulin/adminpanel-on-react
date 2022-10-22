@@ -1,4 +1,4 @@
-.searchbar {
+._ {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,8 @@
   background-color: var(--color-style-white);
   box-sizing: border-box;
 }
-.searchbar__icon-search {
+
+.search {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -19,13 +20,8 @@
   height: 1rem;
   stroke: var(--color-style-blue);
 }
-.searchbar .button {
-  position: absolute;
-  right: 0.25rem;
-  top: 0.25rem;
-  display: none;
-}
-.searchbar__text {
+
+.text {
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -33,13 +29,14 @@
   width: 100%;
   color: var(--color-style-black);
 }
-.searchbar__text::placeholder {
+
+.text::placeholder {
   color: var(--color-style-light-blue);
 }
-.searchbar_filled .button {
-  display: block;
-}
-.searchbar .button .icon{
+
+.buttons {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
   stroke: var(--color-style-light-blue);
-  fill: var(--color-style-light-blue);
 }

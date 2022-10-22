@@ -1,39 +1,25 @@
 import React from "react";
-import style from "./Searchbar.module.css";
+import classnames from "classnames";
 import { Icon } from "../Icon/Icon";
+import { Button } from "../Button/Button";
+import styles from "./Searchbar.module.css";
 
-export const Searchbar = function Searchbar() {
+export const Searchbar = ({ className, placeholder, filled, ...props }) => {
+  const blockClass = classnames(styles._, {
+    className: className ? className : "",
+  });
+
   return (
-    <>
-        <div className={ style.searchbar }>
-          <Icon className={ style['searchbar__icon-search'] } name="search" />
-          <input
-            className={style.searchbar__text}
-            type="text"
-            placeholder="Номер заказа или ФИО"
-          />
-          <button
-            className="button button_size_small button_icon-only"
-            type="submit"
-          >
-            <Icon className="icon" name="x_medium" />
-          </button>
+    <div className={blockClass} {...props}>
+      <Icon className={styles.search} name="search" />
+      <input className={styles.text} type="text" placeholder={placeholder} />
+      {filled ? (
+        <div className={styles.buttons}>
+          <Button size="small" icon="x_medium" />
         </div>
-        <div className={`${style.searchbar} ${style.searchbar_filled}`}>
-          <Icon className={ style['searchbar__icon-search'] } name="search" />
-          <input
-            className={style.searchbar__text}
-            type="text"
-            placeholder="Номер заказа или ФИО"
-            value="50744"
-          />
-          <button
-            className="button button_size_small button_icon-only"
-            type="submit"
-          >
-            <Icon className="icon" name="x_medium" />
-          </button>
-        </div>
-    </>
+      ) : (
+        ""
+      )}
+    </div>
   );
 };
