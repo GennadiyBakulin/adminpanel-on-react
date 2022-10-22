@@ -14,7 +14,9 @@ export default function App() {
     <div>
       <div className="text-day-night">
         Input
-        <Inputs />
+        <div className="input-wrapper">
+          <Inputs />
+        </div>
       </div>
       <div className="text-day-night">
         Searchbar

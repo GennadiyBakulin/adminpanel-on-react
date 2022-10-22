@@ -1,0 +1,86 @@
+._ {
+  color: var(--color-style-black);
+  width: 100%;
+  text-align: left;
+}
+
+.field {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+  gap: 0.25rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid var(--color-style-blue);
+  background-color: var(--color-style-white);
+}
+
+.fieldText {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: var(--color-style-white);
+  width: 100%;
+  color: var(--color-style-black);
+}
+
+.fieldText::placeholder {
+  color: var(--color-style-light-blue);
+}
+
+.field > .button {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+}
+
+.field > .icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.incorrect .field {
+  border: 0.0625rem solid var(--color-style-red);
+  background-color: var(--color-style-white);
+}
+
+.disabled .field {
+  border: 0.0625rem solid var(--color-style-blue);
+}
+
+.disabled .fieldText,
+.disabled .field {
+  background-color: var(--color-style-light-blue);
+}
+
+.disabled .fieldText ~ .icon {
+  display: block;
+}
+
+.icon {
+  height: 1rem;
+  stroke: var(--color-style-black);
+  fill: var(--color-style-black);
+}
+
+.button {
+  stroke: var(--color-style-light-blue);
+  fill: var(--color-style-light-blue);
+}
+
+.input_status-order .field .icon {
+  display: block;
+}
+
+.input_status-order .field .icon {
+  transform: rotate(90deg);
+}
+
+.input_status-order:hover .field .icon {
+  transform: rotate(0deg);
+}
