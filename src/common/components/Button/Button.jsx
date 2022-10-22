@@ -1,90 +1,80 @@
 import React from "react";
-import styles from "./Button.module.css";
-import { Icon } from "../Icon/Icon";
 import classnames from "classnames";
+import { Icon } from "../Icon/Icon";
+import styles from "./Button.module.css";
 
+const ThemeTypes = {
+  blue: "blue",
+  red: "red",
+  blueTransparent: "blueTransparent",
+  blackTransparent: "blackTransparent",
+};
 
-export const Button = ({className, themeBlue, themeRed, themeBlueTransparent, themeBlackTransparent, sizeMedium, sizeSmall, sizeLarge, iconOnly, children, ...props}) => {
-  const blockClass = classnames({
-    [styles.button]: true,
-    [styles["button_theme-blue"]]: !!themeBlue,
-    [styles["button_theme-red"]]: !!themeRed,
-    [styles["button_theme-blue-transparent"]]: !!themeBlueTransparent,
-    [styles["button_theme-black-transparent"]]: !!themeBlackTransparent,
-    [styles["button_size_medium"]]: !!sizeMedium,
-    [styles["button_size_small"]]: !!sizeSmall,
-    [styles["button_large"]]: !!sizeLarge,
-    [styles["button_icon-only"]]: !!iconOnly,
-    className: !!className ? className : '',
-  })
+const SizeTypes = {
+  medium: "medium",
+  small: "small",
+  large: "large",
+};
+
+export const Button = ({ className, theme, size, text, icon, ...props }) => {
+  const blockClass = classnames(styles._, {
+    [styles.blue]: theme === ThemeTypes.blue,
+    [styles.red]: theme === ThemeTypes.red,
+    [styles.blueTransparent]: theme === ThemeTypes.blueTransparent,
+    [styles.blackTransparent]: theme === ThemeTypes.blackTransparent,
+    [styles.medium]: size === SizeTypes.medium,
+    [styles.small]: size === SizeTypes.small,
+    [styles.large]: size === SizeTypes.large,
+    [styles.iconOnly]: !text,
+    className: className ? className : "",
+  });
 
   return (
-    <>
-      <button className={ blockClass }  {...props}>
-          {children}
-      </button>
-    </>
-  )
-}
+    <button className={blockClass} {...props}>
+      {icon ? <Icon className={styles.icon} name={icon} /> : ""}
+      {text ? text : ""}
+    </button>
+  );
+};
 
 export const Buttons = () => {
   return (
     <>
-      <Button themeBlue sizeMedium>
-        <Icon className="icon" name="x_medium" />
-        Text here
-      </Button>
-      <Button themeBlueTransparent sizeMedium>
-        <Icon className="icon" name="x_medium" />
-        Text here
-      </Button>
-      <Button themeBlackTransparent sizeMedium>
-        <Icon className="icon" name="x_medium" />
-        Text here
-      </Button>
+      <Button theme="blue" size="medium" icon="x_medium" text="Text here" />
+      <Button
+        theme="blueTransparent"
+        size="medium"
+        icon="x_medium"
+        text="Text here"
+      />
+      <Button
+        theme="blackTransparent"
+        size="medium"
+        icon="x_medium"
+        text="Text here"
+      />
 
-      <Button themeBlue sizeMedium>
-        Text here
-      </Button>
-      <Button themeBlueTransparent sizeMedium>
-        Text here
-      </Button>
-      <Button themeBlackTransparent sizeMedium>
-        Text here
-      </Button>
+      <Button theme="blue" size="medium" text="Text here" />
+      <Button theme="blueTransparent" size="medium" text="Text here" />
+      <Button theme="blackTransparent" size="medium" text="Text here" />
 
-      <Button themeBlue sizeMedium iconOnly>
-        <Icon className="icon" name="x_medium" />
-      </Button>
-      <Button themeBlueTransparent sizeMedium iconOnly>
-        <Icon className="icon" name="x_medium" />
-      </Button>
-      <Button themeBlackTransparent sizeMedium iconOnly>
-        <Icon className="icon" name="x_medium" />
-      </Button>
+      <Button theme="blue" size="medium" icon="x_medium" />
+      <Button theme="blueTransparent" size="medium" icon="x_medium" />
+      <Button theme="blackTransparent" size="medium" icon="x_medium" />
 
-      <Button themeBlue sizeSmall>
-        <Icon className="icon" name="x_medium" />
-        Text here
-      </Button>
-      <Button themeBlueTransparent sizeSmall>
-        <Icon className="icon" name="x_medium" />
-        Text here
-      </Button>
+      <Button theme="blue" size="small" icon="x_medium" text="Text here" />
+      <Button
+        theme="blueTransparent"
+        size="small"
+        icon="x_medium"
+        text="Text here"
+      />
 
-      <Button themeBlue sizeSmall>
-        Text here
-      </Button>
-      <Button themeBlueTransparent sizeSmall>
-        Text here
-      </Button>
+      <Button theme="blue" size="small" text="Text here" />
+      <Button theme="blueTransparent" size="small" text="Text here" />
 
-      <Button themeBlue sizeSmall iconOnly>
-        <Icon className="icon" name="x_medium" />
-      </Button>
-      <Button themeBlueTransparent sizeSmall iconOnly>
-        <Icon className="icon" name="x_medium" />
-      </Button>
+      <Button theme="blue" size="small" icon="x_medium" />
+      <Button theme="blueTransparent" size="small" icon="x_medium" />
     </>
   );
 };

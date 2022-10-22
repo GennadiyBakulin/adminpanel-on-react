@@ -1,16 +1,16 @@
-import "../../../css/radio/radio.css";
+import React from "react";
+import classnames from "classnames";
+import styles from "./Radio.module.css";
 
-export const Radio = function Radio() {
+export const Radio = function Radio({ className, name, text, ...props }) {
+  const blockClass = classnames(styles._, {
+    className: className ? className : "",
+  });
+
   return (
-    <div>
-      <label className="radio">
-        <input className="radio__area" type="radio" name="radio-button" />
-        <span className="radio__text" />
-      </label>
-      <label className="radio">
-        <input className="radio__area" type="radio" name="radio-button" />
-        <span className="radio__text" />
-      </label>
-    </div>
+    <label className={blockClass}>
+      <input className={styles.area} type="radio" name={name} {...props} />
+      {text ? <span className={styles.text}>{text}</span> : ""}
+    </label>
   );
 };

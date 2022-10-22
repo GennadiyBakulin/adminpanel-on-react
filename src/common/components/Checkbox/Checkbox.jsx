@@ -1,18 +1,18 @@
-import "../../../css/checkbox/checkbox.css";
-import { Icon } from "../Icon/Icon";
 import React from "react";
+import classnames from "classnames";
+import styles from "./Checkbox.module.css";
+import { Icon } from "../Icon/Icon";
 
-export const Checkbox = () => {
+export const Checkbox = ({ className, name, text, ...props }) => {
+  const blockClass = classnames(styles._, {
+    className: className ? className : "",
+  });
+
   return (
-    <div>
-      <label className="checkbox">
-        <input className="checkbox__area" type="checkbox" name="checkbox-button" />
-        <Icon className="checkbox__icon" name="checkmark" />
-      </label>
-      <label className="checkbox">
-        <input className="checkbox__area" type="checkbox" name="checkbox-button" />
-        <Icon className="checkbox__icon" name="checkmark" />
-      </label>
-    </div>
+    <label className={blockClass}>
+      <input className={styles.area} type="checkbox" name={name} {...props} />
+      <Icon className={styles.icon} name="checkmark" />
+      {text ? <span className={styles.text}>{text}</span> : ""}
+    </label>
   );
 };

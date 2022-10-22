@@ -1,0 +1,31 @@
+._ {
+  display: flex;
+  align-items: center;
+}
+
+.area {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-style-white);
+  border: 0.0625rem solid var(--color-style-light-blue);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.text {
+  color: var(--color-style-black);
+}
+
+.area:checked {
+  border: 0.25rem solid var(--color-style-blue);
+}
+
+.area:checked ~ .text {
+  color: var(--color-style-blue);
+}
+
+.radio:hover,
+.area:hover {
+  cursor: pointer;
+}
