@@ -34,7 +34,7 @@
   color: var(--color-style-light-blue);
 }
 
-.buttons {
+.button {
   position: absolute;
   right: 0.25rem;
   top: 0.25rem;

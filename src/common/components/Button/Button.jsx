@@ -17,7 +17,7 @@ const SizeTypes = {
 };
 
 export const Button = ({ className, theme, size, text, icon, ...props }) => {
-  const blockClass = classnames(styles._, {
+  const blockClass = classnames(styles._, className, {
     [styles.blue]: theme === ThemeTypes.blue,
     [styles.red]: theme === ThemeTypes.red,
     [styles.blueTransparent]: theme === ThemeTypes.blueTransparent,
@@ -26,13 +26,12 @@ export const Button = ({ className, theme, size, text, icon, ...props }) => {
     [styles.small]: size === SizeTypes.small,
     [styles.large]: size === SizeTypes.large,
     [styles.iconOnly]: !text,
-    className: className ? className : "",
   });
 
   return (
-    <button className={blockClass} {...props}>
-      {icon ? <Icon className={styles.icon} name={icon} /> : ""}
-      {text ? text : ""}
+    <button className={blockClass}>
+      {icon && <Icon className={styles.icon} name={icon} {...props} />}
+      {text && text}
     </button>
   );
 };

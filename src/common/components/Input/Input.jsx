@@ -16,11 +16,11 @@ export const Input = ({
   placeholder,
   value,
   prevText,
+  ...props
 }) => {
-  const blockClass = classnames(styles._, {
+  const blockClass = classnames(styles._, className, {
     [styles.incorrect]: stateType === stateTypes.incorrect,
     [styles.disabled]: stateType === stateTypes.disabled,
-    className: className ? className : "",
   });
 
   return (
@@ -35,17 +35,16 @@ export const Input = ({
           value={value}
           disabled={stateType === stateTypes.disabled}
         />
-        {stateType === stateTypes.incorrect ? (
-          <div className={styles.button}>
-            <Button size="small" icon="x_medium" />
-          </div>
-        ) : (
-          ""
+        {stateType === stateTypes.incorrect && (
+          <Button
+            className={styles.button}
+            size="small"
+            icon="x_medium"
+            {...props}
+          />
         )}
-        {stateType === stateTypes.disabled ? (
-          <Icon className={styles.icon} name="locked" />
-        ) : (
-          ""
+        {stateType === stateTypes.disabled && (
+          <Icon className={styles.icon} name="locked" {...props} />
         )}
       </span>
     </label>

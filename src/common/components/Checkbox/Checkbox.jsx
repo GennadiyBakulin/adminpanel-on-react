@@ -4,9 +4,7 @@ import styles from "./Checkbox.module.css";
 import { Icon } from "../Icon/Icon";
 
 export const Checkbox = ({ className, name, text, checked, ...props }) => {
-  const blockClass = classnames(styles._, {
-    className: className ? className : "",
-  });
+  const blockClass = classnames(styles._, className);
 
   return (
     <label className={blockClass}>
@@ -15,10 +13,9 @@ export const Checkbox = ({ className, name, text, checked, ...props }) => {
         type="checkbox"
         name={name}
         checked={checked}
-        {...props}
       />
-      <Icon className={styles.icon} name="checkmark" />
-      {text ? <span className={styles.text}>{text}</span> : ""}
+      <Icon className={styles.icon} name="checkmark" {...props} />
+      {text && <span className={styles.text}>{text}</span>}
     </label>
   );
 };
