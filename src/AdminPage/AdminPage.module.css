@@ -1,13 +1,3 @@
-@import "../common/components/Icon/Icon.module.css";
-@import "header/header.css";
-@import "button-switcher-theme/button-switcher-theme.css";
-@import "search/search.css";
-@import "filters/filters.css";
-@import "orders-table/orders-table.css";
-@import "pages/pages.css";
-@import "plug-element/plug-element.css";
-@import "order-form/order-form.css";
-@import "scrollbar/scrollbar.css";
 /*   ----- Color Styles -----------------------------------------------------------------    */
 :root {
   --color-style-red: #f53152;
@@ -70,7 +60,7 @@ body {
   background-color: var(--color-style-white);
 }
 /*------------------Стили для админ панели-------------------------*/
-.main-wrapper {
+._ {
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -85,70 +75,3 @@ body {
   margin: 0 auto;
   padding: 2rem 3rem 0;
 }
-/*-----------------------------------------------------------------*/
-/*------------------Стили для вывода блоков с элементами gui-------------------------*/
-.text-day-night {
-  color: var(--color-style-black);
-}
-.input-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 22rem;
-  height: 22.5rem;
-  border: 0.1rem dashed #7b61ff;
-  border-radius: 0.5rem;
-  padding: 3rem;
-}
-.searchbar-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24rem;
-  height: 14rem;
-  border: 0.1rem dashed #7b61ff;
-  border-radius: 0.5rem;
-  padding: 3rem;
-}
-.checkbox-radio-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 10rem;
-  height: 4rem;
-  border: 0.1rem dashed #7b61ff;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-}
-.dropdowns-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: center;
-  gap: 2rem;
-  width: 42rem;
-  height: 32rem;
-  border: 0.1rem dashed #7b61ff;
-  border-radius: 0.5rem;
-  padding: 3rem;
-}
-.buttons-wrapper {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  justify-items: flex-start;
-  align-items: center;
-  gap: 2rem;
-  width: 36rem;
-  height: 23.5rem;
-  border: 0.1rem dashed #7b61ff;
-  border-radius: 0.5rem;
-  padding: 3rem;
-}
-/*-----------------------------------------------------------------*/
