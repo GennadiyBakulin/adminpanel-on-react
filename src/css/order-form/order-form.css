@@ -141,14 +141,14 @@
   width: 100%;
 }
 
-.order-form__order-status .multiple-status {
+.order-form__order-status .multipleStatus {
   display: none;
   position: absolute;
   right: 0;
   bottom: 2rem;
 }
 
-.order-form__order-status .input:hover + .multiple-status {
+.order-form__order-status .input:hover + .multipleStatus {
   display: flex;
 }
 

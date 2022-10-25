@@ -7,6 +7,7 @@ import { Button } from "../Button/Button";
 const stateTypes = {
   incorrect: "incorrect",
   disabled: "disabled",
+  multiple: "multiple",
 };
 
 export const Input = ({
@@ -21,6 +22,7 @@ export const Input = ({
   const blockClass = classnames(styles._, className, {
     [styles.incorrect]: stateType === stateTypes.incorrect,
     [styles.disabled]: stateType === stateTypes.disabled,
+    [styles.multiple]: stateType === stateTypes.multiple,
   });
 
   return (
@@ -33,7 +35,10 @@ export const Input = ({
           type="text"
           placeholder={placeholder}
           value={value}
-          disabled={stateType === stateTypes.disabled}
+          disabled={
+            stateType === stateTypes.disabled ||
+            stateType === stateTypes.multiple
+          }
         />
         {stateType === stateTypes.incorrect && (
           <Button
@@ -42,6 +47,9 @@ export const Input = ({
             icon="x_medium"
             {...props}
           />
+        )}
+        {stateType === stateTypes.multiple && (
+          <Icon className={styles.icon} name="v_arrow" {...props} />
         )}
         {stateType === stateTypes.disabled && (
           <Icon className={styles.icon} name="locked" {...props} />

@@ -73,14 +73,12 @@
   fill: var(--color-style-light-blue);
 }
 
-.input_status-order .field .icon {
-  display: block;
-}
-
-.input_status-order .field .icon {
+.multiple .icon {
   transform: rotate(90deg);
+  stroke: var(--color-style-light-blue);
+  fill: var(--color-style-light-blue);
 }
 
-.input_status-order:hover .field .icon {
+.multiple:hover .icon {
   transform: rotate(0deg);
 }
