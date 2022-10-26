@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./Header.module.css";
-import { ThemeSwitcher } from "../../modules";
+import React from 'react';
+import styles from './Header.module.css';
+import {ThemeSwitcher} from '../../modules';
 
 export const Header = () => {
   return (
