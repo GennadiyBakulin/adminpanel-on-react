@@ -1,6 +1,7 @@
 import React from "react";
-import { Header, Search } from "../modules";
 import styles from "./AdminPage.module.css";
+import {Header} from "../modules/Header/Header";
+import {Search} from "../modules/Search/Search";
 
 export const AdminPage = () => {
   return (

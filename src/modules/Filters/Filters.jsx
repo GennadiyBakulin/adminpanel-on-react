@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Filters.module.css";
-import { Button, Checkbox } from "../../shared/components";
-import { Input } from "../../shared/components/Input/Input";
+import {Button, Checkbox, Input} from "../../shared/components";
 
 export const Filters = () => {
   return (
