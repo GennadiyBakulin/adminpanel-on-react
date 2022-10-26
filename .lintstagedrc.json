@@ -1,4 +1,3 @@
 {
-  "src/**/*.{css,js,jsx,html}": "npm run prettier",
-  "*.{js,jsx}": "npm run lint -- --fix"
+  "src/**/*.{css,js,jsx,html}": "npm run prettier"
 }
