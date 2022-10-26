@@ -1,22 +1,22 @@
-import React from "react";
-import classnames from "classnames";
-import { Icon } from "../Icon/Icon";
-import styles from "./Button.module.css";
+import React from 'react';
+import classnames from 'classnames';
+import {Icon} from '../Icon/Icon';
+import styles from './Button.module.css';
 
 const ThemeTypes = {
-  blue: "blue",
-  red: "red",
-  blueTransparent: "blueTransparent",
-  blackTransparent: "blackTransparent",
+  blue: 'blue',
+  red: 'red',
+  blueTransparent: 'blueTransparent',
+  blackTransparent: 'blackTransparent',
 };
 
 const SizeTypes = {
-  medium: "medium",
-  small: "small",
-  large: "large",
+  medium: 'medium',
+  small: 'small',
+  large: 'large',
 };
 
-export const Button = ({ className, theme, size, text, icon, ...props }) => {
+export const Button = ({className, theme, size, text, icon, ...props}) => {
   const blockClass = classnames(styles._, className, {
     [styles.blue]: theme === ThemeTypes.blue,
     [styles.red]: theme === ThemeTypes.red,

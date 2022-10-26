@@ -1,13 +1,13 @@
-import React from "react";
-import classnames from "classnames";
-import styles from "./Input.module.css";
-import { Icon } from "../Icon/Icon";
-import { Button } from "../Button/Button";
+import React from 'react';
+import classnames from 'classnames';
+import styles from './Input.module.css';
+import {Icon} from '../Icon/Icon';
+import {Button} from '../Button/Button';
 
 const stateTypes = {
-  incorrect: "incorrect",
-  disabled: "disabled",
-  multiple: "multiple",
+  incorrect: 'incorrect',
+  disabled: 'disabled',
+  multiple: 'multiple',
 };
 
 export const Input = ({
@@ -17,7 +17,6 @@ export const Input = ({
   placeholder,
   value,
   prevText,
-  ...props
 }) => {
   const blockClass = classnames(styles._, className, {
     [styles.incorrect]: stateType === stateTypes.incorrect,
@@ -41,18 +40,13 @@ export const Input = ({
           }
         />
         {stateType === stateTypes.incorrect && (
-          <Button
-            className={styles.button}
-            size="small"
-            icon="x_medium"
-            {...props}
-          />
+          <Button className={styles.button} size="small" icon="x_medium" />
         )}
         {stateType === stateTypes.multiple && (
-          <Icon className={styles.icon} name="v_arrow" {...props} />
+          <Icon className={styles.icon} name="v_arrow" />
         )}
         {stateType === stateTypes.disabled && (
-          <Icon className={styles.icon} name="locked" {...props} />
+          <Icon className={styles.icon} name="locked" />
         )}
       </span>
     </label>

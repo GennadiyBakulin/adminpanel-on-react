@@ -10,13 +10,14 @@
         "airbnb",
         "plugin:prettier/recommended"
     ],
-    "parser": "@babel/eslint-parser",
     "overrides": [
     ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
+        "parser": "@babel/eslint-parser",
+        "requireConfigFile": false,
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -36,6 +37,11 @@
         "import/prefer-default-export": 0,
         "react/function-component-definition": "off",
         "jsx-a11y/label-has-associated-control": "off",
+//        "jsx-a11y/label-has-associated-control": [ "error", {
+//            "required": {
+//                "some": [ "nesting", "id"  ]
+//            }
+//        }],
         "react/button-has-type": "off",
         "spaced-comment": "off",
         "no-unneeded-ternary": "off",
