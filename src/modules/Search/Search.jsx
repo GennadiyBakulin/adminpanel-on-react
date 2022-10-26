@@ -11,33 +11,35 @@ export const Search = () => {
   };
 
   return (
-    <>
-      <div className={styles._}>
-        <div className={styles.topPanel}>
-          <div className={styles.searchContainer}>
-            <Searchbar placeholder="Номер заказа или ФИО" filled />
-            <Button
-              theme="blue"
-              size="medium"
-              icon="filter"
-              text="Фильтры"
-              onClick={handlerShowFilters}
-            />
-            <Button
-              theme="blueTransparent"
-              size="medium"
-              text="Сбросить фильтры"
-            />
-          </div>
+    <div className={styles._}>
+      <div className={styles.topPanel}>
+        <div className={styles.searchContainer}>
+          <Searchbar
+            className={styles.searchbar}
+            placeholder="Номер заказа или ФИО"
+            filled
+          />
+          <Button
+            theme="blue"
+            size="medium"
+            icon="filter"
+            text="Фильтры"
+            onClick={handlerShowFilters}
+          />
           <Button
             theme="blueTransparent"
-            size="small"
-            icon="refresh"
-            text="Загрузка"
+            size="medium"
+            text="Сбросить фильтры"
           />
         </div>
+        <Button
+          theme="blueTransparent"
+          size="small"
+          icon="refresh"
+          text="Загрузка"
+        />
       </div>
       {showFilters && <Filters />}
-    </>
+    </div>
   );
 };

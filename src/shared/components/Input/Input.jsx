@@ -59,22 +59,22 @@ export const Input = ({
   );
 };
 
-export const Inputs = () => {
-  return (
-    <>
-      <Input title="Дата и время заказа" placeholder="Введите" prevText="до" />
-      <Input
-        stateType="incorrect"
-        title="Дата и время заказа"
-        placeholder="Введите"
-        value="06.12.2021"
-      />
-      <Input
-        stateType="disabled"
-        title="Дата и время заказа"
-        placeholder="Введите"
-        value="06.12.2021"
-      />
-    </>
-  );
-};
+// export const Inputs = () => {
+//   return (
+//     <>
+//       <Input title="Дата и время заказа" placeholder="Введите" prevText="до" />
+//       <Input
+//         stateType="incorrect"
+//         title="Дата и время заказа"
+//         placeholder="Введите"
+//         value="06.12.2021"
+//       />
+//       <Input
+//         stateType="disabled"
+//         title="Дата и время заказа"
+//         placeholder="Введите"
+//         value="06.12.2021"
+//       />
+//     </>
+//   );
+// };

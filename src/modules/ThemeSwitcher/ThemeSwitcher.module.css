@@ -1,12 +1,10 @@
 ._ {
   position: relative;
 }
+
 ._ .theme-switcher {
   display: none;
   position: absolute;
   top: 1.7rem;
   right: 0;
-}
-._ .button:hover + .theme-switcher {
-  display: flex;
 }

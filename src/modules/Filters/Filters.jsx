@@ -7,7 +7,12 @@ export const Filters = () => {
   return (
     <div className={styles._}>
       <div className={styles.registration}>
-        <Input title="Дата оформления" placeholder="Введите" prevText="с" />
+        <Input
+          title="Дата оформления"
+          placeholder="Введите"
+          prevText="с"
+          value="20.01.2021"
+        />
         <Input placeholder="Введите" prevText="по" />
       </div>
       <div className={styles.orderStatus}>
@@ -46,7 +51,12 @@ export const Filters = () => {
         </div>
       </div>
       <div className={styles.amount}>
-        <Input title="Сумма заказа" placeholder="Введите" prevText="от" />
+        <Input
+          title="Сумма заказа"
+          placeholder="Введите"
+          prevText="от"
+          value="5000"
+        />
         <Input placeholder="Введите" prevText="до" />
       </div>
       <Button theme="blueTransparent" size="medium" text="Применить" />
