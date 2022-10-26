@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styles from "./Search.module.css";
-import { Button, Searchbar } from "../../shared/components";
-import { Filters } from "../Filters/Filters";
+import {Button, Searchbar} from "../../shared/components";
+import {Filters} from "../Filters/Filters";
 
 export const Search = () => {
   const [showFilters, setShowFilters] = useState(false);

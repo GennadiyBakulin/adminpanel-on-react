@@ -1,13 +1,13 @@
-import React from 'react';
-import classnames from 'classnames';
-import styles from './Input.module.css';
-import {Icon} from '../Icon/Icon';
-import {Button} from '../Button/Button';
+import React from "react";
+import classnames from "classnames";
+import styles from "./Input.module.css";
+import {Icon} from "../Icon/Icon";
+import {Button} from "../Button/Button";
 
 const stateTypes = {
-  incorrect: 'incorrect',
-  disabled: 'disabled',
-  multiple: 'multiple',
+  incorrect: "incorrect",
+  disabled: "disabled",
+  multiple: "multiple",
 };
 
 export const Input = ({
