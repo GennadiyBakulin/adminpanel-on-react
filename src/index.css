@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+html,
+body {
+  height: 100%;
+}
 body {
   background-color: var(--color-style-white);
   font-family: "Ubuntu", sans-serif;
@@ -61,4 +66,22 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+}
+
+.scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.34);
+  border-radius: 0.5rem;
 }

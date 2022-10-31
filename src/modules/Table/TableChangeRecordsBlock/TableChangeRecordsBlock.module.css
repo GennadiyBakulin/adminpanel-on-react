@@ -1,0 +1,10 @@
+._ {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 24rem;
+}
+
+.selectionRecords {
+  color: var(--color-style-blue);
+}

@@ -1,0 +1,58 @@
+._ {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  width: 100%;
+  background: var(--color-style-blue);
+  color: var(--color-style-white-blue);
+  border-bottom: 0.0625rem solid var(--color-style-white-blue);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+._ .icon {
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
+}
+
+._ .checkboxCell:hover,
+._ .idCell:hover,
+._ .dateCell:hover,
+._ .statusCell:hover,
+._ .positionCell:hover,
+._ .amountCell:hover,
+._ .nameCell:hover {
+  background: var(--color-style-shade-background);
+}
+
+.checkboxCell {
+  min-width: 2rem;
+}
+
+.idCell {
+  min-width: 6.75rem;
+}
+
+.dateCell {
+  min-width: 11rem;
+}
+
+.statusCell {
+  min-width: 11rem;
+}
+
+.positionCell {
+  min-width: 6rem;
+}
+
+.amountCell {
+  min-width: 8rem;
+}
+
+.nameCell {
+  width: 100%;
+}

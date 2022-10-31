@@ -1,0 +1,43 @@
+._ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: calc(100% - 0.25rem);
+  height: 100%;
+  min-height: 10rem;
+  color: var(--color-style-black);
+  overflow-y: auto;
+}
+
+._ .row:hover {
+  background: var(--color-style-shade-background);
+}
+
+.checkboxCell {
+  min-width: 2rem;
+}
+
+.idCell {
+  min-width: 6.75rem;
+}
+
+.dateCell {
+  min-width: 11rem;
+}
+
+.statusCell {
+  min-width: 11rem;
+}
+
+.positionCell {
+  min-width: 6rem;
+}
+
+.amountCell {
+  min-width: 8rem;
+}
+
+.nameCell {
+  width: 100%;
+}

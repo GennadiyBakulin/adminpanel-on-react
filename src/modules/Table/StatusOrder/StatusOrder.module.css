@@ -1,0 +1,43 @@
+._ {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.25rem;
+}
+
+.new {
+  color: var(--color-style-black);
+  stroke: var(--color-style-orange);
+  fill: var(--color-style-orange);
+}
+
+.calculated {
+  color: var(--color-style-black);
+  stroke: var(--color-style-blue);
+  fill: var(--color-style-blue);
+}
+
+.postponed {
+  color: var(--color-style-black);
+  stroke: var(--color-style-orange);
+  fill: var(--color-style-orange);
+}
+
+.completed {
+  opacity: 0.5;
+  color: var(--color-style-green);
+  stroke: var(--color-style-green);
+  fill: var(--color-style-green);
+}
+
+.cancelled {
+  opacity: 0.5;
+  color: var(--color-style-black);
+  stroke: var(--color-style-black);
+  fill: var(--color-style-black);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}

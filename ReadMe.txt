@@ -28,7 +28,5 @@ npx lint-staged
           }]
 }
 
-
-"*.{js,jsx}": "npm run lint:fix"
-
 npm run lint -- --fix
+/* "src/**/*.{js,jsx}": "npm run lint:fix" */

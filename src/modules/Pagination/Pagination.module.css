@@ -1,0 +1,16 @@
+._ {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.selectPage {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: 8.25rem;
+  color: var(--color-style-blue);
+}
+
+.currentPage {
+}

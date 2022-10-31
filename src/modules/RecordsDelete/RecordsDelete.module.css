@@ -1,0 +1,33 @@
+._ {
+  position: relative;
+}
+
+._ > .button {
+  color: var(--color-style-white-day-night);
+}
+
+._ .deleteRecords {
+  display: none;
+  position: absolute;
+  top: -7.2rem;
+  left: 0;
+}
+
+._:hover .deleteRecords {
+  display: flex;
+}
+
+.deleteRecords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 10rem;
+  background-color: var(--color-style-white);
+  box-shadow: var(--dropdown-box-shadow);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: var(--color-style-black);
+  z-index: 2;
+}

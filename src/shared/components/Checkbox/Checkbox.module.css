@@ -1,12 +1,12 @@
-._ {
+._:hover {
+  cursor: pointer;
+}
+
+.wrapper {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-._:hover {
-  cursor: pointer;
 }
 
 .area {
@@ -21,8 +21,8 @@
 
 .icon {
   position: absolute;
-  top: 0.5rem;
-  left: 1rem;
+  top: 0;
+  left: 0;
   width: 1rem;
   fill: var(--color-style-white);
   opacity: 0;
@@ -32,6 +32,10 @@
   margin-left: 0.5rem;
 
   color: var(--color-style-black);
+}
+
+.area:hover ~ .text {
+  color: var(--color-style-blue);
 }
 
 .area:checked {

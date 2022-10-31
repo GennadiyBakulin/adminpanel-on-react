@@ -26,26 +26,26 @@
         "prettier"
     ],
     "rules": {
-        "quotes": "off",
-        "react/jsx-uses-react": ["off"],
-        "react/react-in-jsx-scope": ["off"],
-        "react/jsx-props-no-spreading": ["warn"],
-        "no-shadow": "off",
-        "prettier/prettier": ["error",{
-            "endOfLine": "auto"}
-        ],
-        "react/prop-types": 0,
-        "import/prefer-default-export": 0,
-        "react/function-component-definition": "off",
-        "jsx-a11y/label-has-associated-control": "off",
+//        "quotes": "off",
+//        "react/jsx-uses-react": ["off"],
+//        "react/react-in-jsx-scope": ["off"],
+//        "react/jsx-props-no-spreading": ["warn"],
+//        "no-shadow": "off",
+//        "prettier/prettier": ["error",{
+//            "endOfLine": "auto"}
+//        ],
+//        "react/prop-types": 0,
+//        "import/prefer-default-export": 0,
+//        "react/function-component-definition": "off",
+//        "jsx-a11y/label-has-associated-control": "off",
 //        "jsx-a11y/label-has-associated-control": [ "error", {
 //            "required": {
 //                "some": [ "nesting", "id"  ]
 //            }
 //        }],
-        "react/button-has-type": "off",
-        "spaced-comment": "off",
-        "no-unneeded-ternary": "off",
-        "no-unused-vars": "off"
+//        "react/button-has-type": "off",
+//        "spaced-comment": "off",
+//        "no-unneeded-ternary": "off",
+//        "no-unused-vars": "off"
     }
 }
