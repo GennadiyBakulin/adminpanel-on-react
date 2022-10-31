@@ -40,7 +40,7 @@
 .red {
   background-color: var(--color-style-red);
   border-radius: 0.25rem;
-  color: var(--color-style-white);
+  color: var(--color-style-white-day-night);
 }
 
 .red .icon {
