@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./TableBody.module.css";
-import {Checkbox} from "../../../shared/components";
-import {TableCell} from "../TableCell/TableCell";
-import {dataTable} from "../dataTable";
-import {TableRow} from "../TableRow/TableRow";
-import {StatusOrder} from "../StatusOrder/StatusOrder";
+import { Checkbox } from "../../../shared/components";
+import { TableCell } from "../TableCell/TableCell";
+import { dataTable } from "../dataTable";
+import { TableRow } from "../TableRow/TableRow";
+import { StatusOrder } from "../StatusOrder/StatusOrder";
 
 export const TableBody = () => {
   return (
