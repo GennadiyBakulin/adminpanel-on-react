@@ -74,6 +74,9 @@
                 "ts": "never",
                 "tsx": "never"
             }
-        ]
+        ],
+        "react/jsx-no-constructed-context-values": "off",
+        "react/prop-types": "off",
+        "react/function-component-definition": "off"
     }
 }
