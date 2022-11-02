@@ -1,81 +1,82 @@
+@import url(./normalize.css);
+
 :root {
-  --color-style-red: #f53152;
-  --color-style-orange: #ff8c56;
-  --color-style-green: #0fb864;
-  --color-style-blue: #459df5;
-  --color-style-purple: #8055ff;
-  --color-style-light: #a8a8ff;
-  --color-style-white-day-night: #ffffff;
-  --dropdown-shadow-background: #c4c4c4;
-  --form-elevation-shadow-box: 0 0 4rem rgba(0, 0, 0, 0.2),
-    0 0 1rem rgba(0, 0, 0, 0.15), 0 0 0.25rem rgba(0, 0, 0, 0.1);
+	--color-style-red: #f53152;
+	--color-style-orange: #ff8c56;
+	--color-style-green: #0fb864;
+	--color-style-blue: #459df5;
+	--color-style-purple: #8055ff;
+	--color-style-light: #a8a8ff;
+	--color-style-white-day-night: #ffffff;
+	--dropdown-shadow-background: #c4c4c4;
+	--form-elevation-shadow-box: 0 0 4rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.15), 0 0 0.25rem rgba(0, 0, 0, 0.1);
 }
 
-:root[data-theme="light"] {
-  --color-style-black: #000000;
-  --color-style-white: #ffffff;
-  --color-style-light-blue: #bad8f5;
-  --color-style-white-blue: #ebf0f5;
-  --color-style-shade-background: rgba(0, 0, 0, 0.15);
-  --dropdown-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1),
-    0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+:root[data-theme='light'] {
+	--color-style-black: #000000;
+	--color-style-white: #ffffff;
+	--color-style-light-blue: #bad8f5;
+	--color-style-white-blue: #ebf0f5;
+	--color-style-shade-background: rgba(0, 0, 0, 0.15);
+	--dropdown-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1),
+		0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
 }
 
-:root[data-theme="night"] {
-  --color-style-black: #bcc4cc;
-  --color-style-white: #2b2d33;
-  --color-style-light-blue: #454e52;
-  --color-style-white-blue: #171b1f;
-  --color-style-shade-background: rgba(0, 0, 0, 0.3);
-  --dropdown-box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2),
-    0 0.375rem 0.75rem rgba(0, 0, 0, 0.3), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
+:root[data-theme='night'] {
+	--color-style-black: #bcc4cc;
+	--color-style-white: #2b2d33;
+	--color-style-light-blue: #454e52;
+	--color-style-white-blue: #171b1f;
+	--color-style-shade-background: rgba(0, 0, 0, 0.3);
+	--dropdown-box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2), 0 0.375rem 0.75rem rgba(0, 0, 0, 0.3),
+		0 0.25rem 0.25rem rgba(0, 0, 0, 0.4);
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  background-color: var(--color-style-white);
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.8125rem;
+	line-height: 1rem;
+	background-color: var(--color-style-white);
 }
 
 .headline-font {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.625rem;
-  line-height: 2rem;
-  letter-spacing: -0.0125rem;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.625rem;
+	line-height: 2rem;
+	letter-spacing: -0.0125rem;
 }
 
 .plug-element-font {
-  font-family: "Exo 2", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+	font-family: 'Exo 2', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 /*   ----- Scrollbar --------------------------------------------------------------------    */
 .scrollbar {
-  width: 0.5rem;
+	width: 0.5rem;
 }
 
 ::-webkit-scrollbar {
-  width: 0.25rem;
+	width: 0.25rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.34);
-  border-radius: 0.5rem;
+	background: rgba(0, 0, 0, 0.34);
+	border-radius: 0.5rem;
 }

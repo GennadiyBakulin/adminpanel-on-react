@@ -1,10 +1,8 @@
-._ {
-  position: relative;
+.themeSwitcher {
+	top: 1.7rem;
+	right: 0;
 }
 
-._ .theme-switcher {
-  display: none;
-  position: absolute;
-  top: 1.7rem;
-  right: 0;
+.themeSwitcher .button {
+	align-self: stretch;
 }
