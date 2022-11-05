@@ -32,7 +32,9 @@ export const Filters = () => {
         <Input title='Сумма заказа' placeholder='Введите' prevText='от' value='5000' onChange={p} />
         <Input placeholder='Введите' prevText='до' onChange={p} />
       </div>
-      <Button theme='blueTransparent' size='medium' value='Применить' />
+      <Button theme='blueTransparent' size='medium'>
+        Применить
+      </Button>
     </div>
   );
 };

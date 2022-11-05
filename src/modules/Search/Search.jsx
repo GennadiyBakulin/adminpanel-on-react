@@ -21,12 +21,17 @@ export const Search = () => {
             theme={showFilters ? 'blue' : 'blueTransparent'}
             size='medium'
             icon='filter'
-            value='Фильтры'
             onClick={handlerShowFilters}
-          />
-          <Button theme='blueTransparent' size='medium' value='Сбросить фильтры' />
+          >
+            Фильтры
+          </Button>
+          <Button theme='blueTransparent' size='medium'>
+            Сбросить фильтры
+          </Button>
         </div>
-        <Button theme='blueTransparent' size='small' icon='refresh' value='Загрузка' />
+        <Button theme='blueTransparent' size='small' icon='refresh'>
+          Загрузка
+        </Button>
       </div>
       {showFilters && <Filters />}
     </div>

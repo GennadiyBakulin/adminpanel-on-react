@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(themes.night);
+  const [theme, setTheme] = useState(themes.light);
 
   document.documentElement.dataset.theme = theme;
 

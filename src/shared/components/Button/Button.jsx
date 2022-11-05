@@ -16,7 +16,7 @@ const SizeTypes = {
   large: 'large'
 };
 
-export const Button = ({ className, theme, size, value, children, icon, ...props }) => {
+export const Button = ({ className, theme, size, children, icon, ...props }) => {
   const blockClass = classnames(styles._, className, {
     [styles.blue]: theme === ThemeTypes.blue,
     [styles.red]: theme === ThemeTypes.red,
@@ -25,13 +25,12 @@ export const Button = ({ className, theme, size, value, children, icon, ...props
     [styles.medium]: size === SizeTypes.medium,
     [styles.small]: size === SizeTypes.small,
     [styles.large]: size === SizeTypes.large,
-    [styles.iconOnly]: !children && !value
+    [styles.iconOnly]: !children
   });
 
   return (
     <button className={blockClass} onClick={props.onClick} type='button'>
       {icon && <Icon className={styles.icon} name={icon} />}
-      {value}
       {children}
     </button>
   );
