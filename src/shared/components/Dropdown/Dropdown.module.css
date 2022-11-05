@@ -1,16 +1,16 @@
 ._ {
-	position: relative;
+  position: relative;
 }
 
 .overlay {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	width: 10rem;
-	background-color: var(--color-style-white);
-	box-shadow: var(--dropdown-box-shadow);
-	border-radius: 0.5rem;
-	box-sizing: border-box;
-	color: var(--color-style-black);
-	z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  background-color: var(--color-style-white);
+  box-shadow: var(--dropdown-box-shadow);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: var(--color-style-black);
+  z-index: 2;
 }

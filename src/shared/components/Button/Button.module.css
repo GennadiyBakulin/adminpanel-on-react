@@ -1,88 +1,88 @@
 ._ {
-	border: none;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: stretch;
-	cursor: pointer;
-	background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .icon {
-	height: 1rem;
-	width: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .blue {
-	border-radius: 0.25rem;
-	background-color: var(--color-style-blue);
-	color: var(--color-style-white);
+  border-radius: 0.25rem;
+  background-color: var(--color-style-blue);
+  color: var(--color-style-white);
 }
 
 .blue .icon {
-	stroke: var(--color-style-white);
-	fill: var(--color-style-white);
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
 }
 
 .blueTransparent {
-	color: var(--color-style-blue);
+  color: var(--color-style-blue);
 }
 
 .blueTransparent .icon {
-	stroke: var(--color-style-blue);
-	fill: var(--color-style-blue);
+  stroke: var(--color-style-blue);
+  fill: var(--color-style-blue);
 }
 
 .blueTransparent:hover,
 .blueTransparent:hover .icon {
-	border-radius: 0.25rem;
-	background: var(--color-style-blue);
-	color: var(--color-style-white);
-	stroke: var(--color-style-white);
-	fill: var(--color-style-white);
-	opacity: 0.6;
+  border-radius: 0.25rem;
+  background: var(--color-style-blue);
+  color: var(--color-style-white);
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
+  opacity: 0.6;
 }
 
 .blackTransparent {
-	color: var(--color-style-black);
+  color: var(--color-style-black);
 }
 
 .blackTransparent .icon {
-	fill: var(--color-style-black);
-	stroke: var(--color-style-black);
+  fill: var(--color-style-black);
+  stroke: var(--color-style-black);
 }
 
 .red {
-	background-color: var(--color-style-red);
-	border-radius: 0.25rem;
-	color: var(--color-style-white-day-night);
+  background-color: var(--color-style-red);
+  border-radius: 0.25rem;
+  color: var(--color-style-white-day-night);
 }
 
 .red .icon {
-	stroke: var(--color-style-white-day-night);
-	fill: var(--color-style-white-day-night);
+  stroke: var(--color-style-white-day-night);
+  fill: var(--color-style-white-day-night);
 }
 
 .medium {
-	height: 2rem;
-	padding: 0.5rem 1rem;
-	gap: 0.5rem;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
 }
 
 .small {
-	height: 1.5rem;
-	padding: 0.25rem 0.5rem;
-	gap: 0.25rem;
+  height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  gap: 0.25rem;
 }
 
 .medium.iconOnly {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .small.iconOnly {
-	padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 .large {
-	height: 2rem;
+  height: 2rem;
 }

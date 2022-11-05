@@ -39,13 +39,13 @@
       "always"
     ],
     "object-curly-newline": "off",
-    "no-tabs": 0,
     "indent": [
-      2,
-      "tab",
-      {
-        "SwitchCase": 1
-      }
+      "error",
+      2
+    ],
+    "react/jsx-indent": [
+      "error",
+      2
     ],
     "comma-dangle": [
       "error",
@@ -75,14 +75,6 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-boolean-value": "off",
-    "react/jsx-indent": [
-      "error",
-      "tab",
-      {
-        "checkAttributes": true,
-        "indentLogicalExpressions": true
-      }
-    ],
     "react/jsx-filename-extension": [
       1,
       {
