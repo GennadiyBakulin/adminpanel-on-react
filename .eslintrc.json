@@ -57,6 +57,7 @@
         "code": 130
       }
     ],
+    "react/button-has-type": "off",
     "jsx-quotes": [
       "error",
       "prefer-single"
