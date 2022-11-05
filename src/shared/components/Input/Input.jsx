@@ -10,7 +10,7 @@ const INPUT_STATES = {
   multiple: 'multiple'
 };
 
-export const Input = ({ className, inputStates, title, placeholder, value = '', onChange, prevText }) => {
+export const Input = ({ className, inputStates, title, placeholder, value = '', onChange, prefixText }) => {
   const blockClass = classnames(styles._, className, {
     [styles.incorrect]: inputStates === INPUT_STATES.incorrect,
     [styles.disabled]: inputStates === INPUT_STATES.disabled,
@@ -21,7 +21,7 @@ export const Input = ({ className, inputStates, title, placeholder, value = '', 
     <label className={blockClass}>
       {title}
       <span className={styles.field}>
-        {prevText}
+        {prefixText}
         <input
           className={styles.fieldText}
           type='text'

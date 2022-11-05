@@ -7,8 +7,8 @@ export const Filters = () => {
   return (
     <div className={styles._}>
       <div className={styles.registration}>
-        <Input title='Дата оформления' placeholder='Введите' prevText='с' value='20.01.2021' onChange={p} />
-        <Input placeholder='Введите' prevText='по' onChange={p} />
+        <Input title='Дата оформления' placeholder='Введите' prefixText='с' value='20.01.2021' onChange={p} />
+        <Input placeholder='Введите' prefixText='по' onChange={p} />
       </div>
       <Dropdown
         className={styles.multipleStatus}
@@ -29,8 +29,8 @@ export const Filters = () => {
         }
       />
       <div className={styles.amount}>
-        <Input title='Сумма заказа' placeholder='Введите' prevText='от' value='5000' onChange={p} />
-        <Input placeholder='Введите' prevText='до' onChange={p} />
+        <Input title='Сумма заказа' placeholder='Введите' prefixText='от' value='5000' onChange={p} />
+        <Input placeholder='Введите' prefixText='до' onChange={p} />
       </div>
       <Button theme='blueTransparent' size='medium'>
         Применить
