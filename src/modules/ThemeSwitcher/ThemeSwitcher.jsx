@@ -8,7 +8,7 @@ export const ThemeSwitcher = () => {
 		<ThemeContext.Consumer>
 			{({ theme, setTheme }) => (
 				<Dropdown
-					className={styles.themeSwitcher}
+					className={styles._}
 					trigger={
 						<Button
 							theme='blueTransparent'

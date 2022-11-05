@@ -27,7 +27,12 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "arrow-body-style": "off",
     "arrow-parens": [
       "error",

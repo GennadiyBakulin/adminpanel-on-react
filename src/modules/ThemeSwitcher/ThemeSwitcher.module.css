@@ -1,8 +1,11 @@
-.themeSwitcher {
+._ {
 	top: 1.7rem;
 	right: 0;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem;
 }
 
-.themeSwitcher .button {
+._ .button {
 	align-self: stretch;
 }

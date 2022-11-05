@@ -29,52 +29,10 @@ export const Button = ({ className, theme, size, value, children, icon, ...props
 	});
 
 	return (
-		<button className={blockClass} onClick={props.onClick}>
+		<button className={blockClass} onClick={props.onClick} type='button'>
 			{icon && <Icon className={styles.icon} name={icon} />}
 			{value}
 			{children}
 		</button>
 	);
 };
-
-// export const Buttons = () => {
-//   return (
-//     <>
-//       <Button theme="blue" size="medium" icon="x_medium" text="Text here" />
-//       <Button
-//         theme="blueTransparent"
-//         size="medium"
-//         icon="x_medium"
-//         text="Text here"
-//       />
-//       <Button
-//         theme="blackTransparent"
-//         size="medium"
-//         icon="x_medium"
-//         text="Text here"
-//       />
-//
-//       <Button theme="blue" size="medium" text="Text here" />
-//       <Button theme="blueTransparent" size="medium" text="Text here" />
-//       <Button theme="blackTransparent" size="medium" text="Text here" />
-//
-//       <Button theme="blue" size="medium" icon="x_medium" />
-//       <Button theme="blueTransparent" size="medium" icon="x_medium" />
-//       <Button theme="blackTransparent" size="medium" icon="x_medium" />
-//
-//       <Button theme="blue" size="small" icon="x_medium" text="Text here" />
-//       <Button
-//         theme="blueTransparent"
-//         size="small"
-//         icon="x_medium"
-//         text="Text here"
-//       />
-//
-//       <Button theme="blue" size="small" text="Text here" />
-//       <Button theme="blueTransparent" size="small" text="Text here" />
-//
-//       <Button theme="blue" size="small" icon="x_medium" />
-//       <Button theme="blueTransparent" size="small" icon="x_medium" />
-//     </>
-//   );
-// };

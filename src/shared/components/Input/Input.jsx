@@ -10,7 +10,7 @@ const INPUT_STATES = {
 	multiple: 'multiple'
 };
 
-export const Input = ({ className, inputStates, title, placeholder, value, prevText }) => {
+export const Input = ({ className, inputStates, title, placeholder, value = '', onChange, prevText }) => {
 	const blockClass = classnames(styles._, className, {
 		[styles.incorrect]: inputStates === INPUT_STATES.incorrect,
 		[styles.disabled]: inputStates === INPUT_STATES.disabled,
@@ -27,6 +27,7 @@ export const Input = ({ className, inputStates, title, placeholder, value, prevT
 					type='text'
 					placeholder={placeholder}
 					value={value}
+					onChange={onChange}
 					disabled={inputStates === INPUT_STATES.disabled || inputStates === INPUT_STATES.multiple}
 				/>
 				{inputStates === INPUT_STATES.incorrect && <Button className={styles.button} size='small' icon='x_medium' />}
