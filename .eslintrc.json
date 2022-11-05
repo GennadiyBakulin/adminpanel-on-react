@@ -1,51 +1,127 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "overrides": [
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime",
-        "airbnb",
-        "plugin:prettier/recommended"
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
     ],
-    "overrides": [
+    "arrow-body-style": "off",
+    "arrow-parens": [
+      "error",
+      "always"
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "parser": "@babel/eslint-parser",
-        "requireConfigFile": false,
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "prettier"
+    "object-curly-newline": "off",
+    "no-tabs": 0,
+    "indent": [
+      2,
+      "tab",
+      {
+        "SwitchCase": 1
+      }
     ],
-    "rules": {
-        "quotes": "off",
-        "react/jsx-uses-react": ["off"],
-        "react/react-in-jsx-scope": ["off"],
-        "react/jsx-props-no-spreading": ["warn"],
-        "no-shadow": "off",
-        "prettier/prettier": ["error",{
-            "endOfLine": "auto"}
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 130
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          ":": "before"
+        }
+      }
+    ],
+    "react/jsx-indent-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-indent": [
+      "error",
+      "tab",
+      {
+        "checkAttributes": true,
+        "indentLogicalExpressions": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "prefer-arrow-callback": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/jsx-no-constructed-context-values": "off",
+    "react/prop-types": 0,
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": [
+          "arrow-function",
+          "function-declaration",
+          "function-expression"
         ],
-        "react/prop-types": 0,
-        "import/prefer-default-export": 0,
-        "react/function-component-definition": "off",
-        "jsx-a11y/label-has-associated-control": "off",
-//        "jsx-a11y/label-has-associated-control": [ "error", {
-//            "required": {
-//                "some": [ "nesting", "id"  ]
-//            }
-//        }],
-        "react/button-has-type": "off",
-        "spaced-comment": "off",
-        "no-unneeded-ternary": "off",
-        "no-unused-vars": "off"
-    }
+        "unnamedComponents": [
+          "arrow-function",
+          "function-expression"
+        ]
+      }
+    ]
+  }
 }

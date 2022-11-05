@@ -1,74 +1,39 @@
-import React from "react";
-import classnames from "classnames";
-import styles from "./Input.module.css";
-import {Icon} from "../Icon/Icon";
-import {Button} from "../Button/Button";
+import React from 'react';
+import classnames from 'classnames';
+import styles from './Input.module.css';
+import { Icon } from '../Icon/Icon';
+import { Button } from '../Button/Button';
 
-const stateTypes = {
-  incorrect: "incorrect",
-  disabled: "disabled",
-  multiple: "multiple",
+const INPUT_STATES = {
+	incorrect: 'incorrect',
+	disabled: 'disabled',
+	multiple: 'multiple'
 };
 
-export const Input = ({
-  className,
-  stateType,
-  title,
-  placeholder,
-  value,
-  prevText,
-}) => {
-  const blockClass = classnames(styles._, className, {
-    [styles.incorrect]: stateType === stateTypes.incorrect,
-    [styles.disabled]: stateType === stateTypes.disabled,
-    [styles.multiple]: stateType === stateTypes.multiple,
-  });
+export const Input = ({ className, inputStates, title, placeholder, value = '', onChange, prevText }) => {
+	const blockClass = classnames(styles._, className, {
+		[styles.incorrect]: inputStates === INPUT_STATES.incorrect,
+		[styles.disabled]: inputStates === INPUT_STATES.disabled,
+		[styles.multiple]: inputStates === INPUT_STATES.multiple
+	});
 
-  return (
-    <label className={blockClass}>
-      {title}
-      <span className={styles.field}>
-        {prevText}
-        <input
-          className={styles.fieldText}
-          type="text"
-          placeholder={placeholder}
-          value={value}
-          disabled={
-            stateType === stateTypes.disabled ||
-            stateType === stateTypes.multiple
-          }
-        />
-        {stateType === stateTypes.incorrect && (
-          <Button className={styles.button} size="small" icon="x_medium" />
-        )}
-        {stateType === stateTypes.multiple && (
-          <Icon className={styles.icon} name="v_arrow" />
-        )}
-        {stateType === stateTypes.disabled && (
-          <Icon className={styles.icon} name="locked" />
-        )}
-      </span>
-    </label>
-  );
+	return (
+		<label className={blockClass}>
+			{title}
+			<span className={styles.field}>
+				{prevText}
+				<input
+					className={styles.fieldText}
+					type='text'
+					placeholder={placeholder}
+					value={value}
+					onChange={onChange}
+					disabled={inputStates === INPUT_STATES.disabled || inputStates === INPUT_STATES.multiple}
+				/>
+				{inputStates === INPUT_STATES.incorrect && <Button className={styles.button} size='small' icon='x_medium' />}
+				{inputStates === INPUT_STATES.multiple && <Icon className={styles.icon} name='v_arrow' />}
+				{inputStates === INPUT_STATES.disabled && <Icon className={styles.icon} name='locked' />}
+			</span>
+		</label>
+	);
 };
-
-// export const Inputs = () => {
-//   return (
-//     <>
-//       <Input title="Дата и время заказа" placeholder="Введите" prevText="до" />
-//       <Input
-//         stateType="incorrect"
-//         title="Дата и время заказа"
-//         placeholder="Введите"
-//         value="06.12.2021"
-//       />
-//       <Input
-//         stateType="disabled"
-//         title="Дата и время заказа"
-//         placeholder="Введите"
-//         value="06.12.2021"
-//       />
-//     </>
-//   );
-// };

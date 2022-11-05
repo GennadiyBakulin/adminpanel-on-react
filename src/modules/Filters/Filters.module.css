@@ -1,66 +1,44 @@
 ._ {
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem;
-  gap: 1rem;
-  width: 100%;
-  height: 5.5rem;
-  background-color: var(--color-style-white-blue);
-  border-radius: 0.5rem;
+	display: flex;
+	align-items: flex-end;
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 5.5rem;
+	background-color: var(--color-style-white-blue);
+	border-radius: 0.5rem;
 }
 
 .registration {
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
-  width: 18rem;
+	display: flex;
+	align-items: flex-end;
+	gap: 0.5rem;
+	width: 18rem;
 }
 
 .registration .input {
-  flex-basis: 50%;
+	flex-basis: 50%;
 }
 
 .amount {
-  display: flex;
-  align-items: flex-end;
-  gap: 0.5rem;
-  width: 16rem;
+	display: flex;
+	align-items: flex-end;
+	gap: 0.5rem;
+	width: 16rem;
 }
 
 .amount .input {
-  flex-basis: 50%;
+	flex-basis: 50%;
 }
 
 .multipleStatus {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0.5rem 0;
-  width: 10rem;
-  background-color: var(--color-style-white);
-  box-shadow: var(--dropdown-box-shadow);
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  color: var(--color-style-black);
-  z-index: 2;
+	top: 3.7rem;
+	right: 0;
+	align-items: flex-start;
+	padding: 0.5rem 0;
 }
 
-.orderStatus {
-  position: relative;
-  width: 12rem;
-}
-
-.orderStatus .multipleStatus {
-  display: none;
-  position: absolute;
-  right: 0;
-}
-
-.orderStatus:hover .multipleStatus {
-  display: flex;
-}
-
-.multipleStatus .checkbox {
-  align-self: stretch;
-  padding: 0.5rem 0 0.5rem 1rem;
+.checkbox {
+	align-self: stretch;
+	padding: 0.5rem 0 0.5rem 1rem;
 }
