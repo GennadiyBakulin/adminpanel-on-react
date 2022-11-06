@@ -4,16 +4,18 @@ import styles from './Input.module.css';
 import { Icon } from '../Icon/Icon';
 import { Button } from '../Button/Button';
 
+const noop = () => {};
 export const Input = ({
   className,
   incorrect,
   disabled,
   title,
   placeholder,
-  value = '',
-  onChange,
   prefixText,
-  postfix
+  postfix,
+  value = '',
+  onChange = noop,
+  onReset = noop
 }) => {
   const blockClass = classnames(styles._, className, {
     [styles.incorrect]: incorrect,
@@ -33,7 +35,9 @@ export const Input = ({
           onChange={onChange}
           disabled={disabled}
         />
-        {value.length > 0 && !postfix && <Button className={styles.button} size='small' icon='x_medium' />}
+        {value.length > 0 && !postfix && (
+          <Button className={styles.button} size='small' icon='x_medium' onClick={onReset} />
+        )}
         {disabled && !postfix && <Icon className={styles.icon} name='locked' />}
         {postfix && <div className={styles.postfix}>{postfix}</div>}
       </span>
