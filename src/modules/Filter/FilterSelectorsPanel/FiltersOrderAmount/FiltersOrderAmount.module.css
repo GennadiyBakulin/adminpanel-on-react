@@ -1,0 +1,10 @@
+._ {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  width: 16rem;
+}
+
+._ .input {
+  flex-basis: 50%;
+}
