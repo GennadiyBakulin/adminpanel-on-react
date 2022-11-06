@@ -22,6 +22,15 @@ export const FiltersProvider = ({ children }) => {
     canceled: false
   });
 
+  const STATUSES_NAMES_TRANSLATION = {
+    new: 'Новый',
+    calculating: 'Расчет',
+    confirm: 'Подтвержден',
+    postponed: 'Отложен',
+    done: 'Выполнен',
+    canceled: 'Отменен'
+  };
+
   const createHandleChange = (setter) => [({ target: { value } }) => setter(value), () => setter('')];
 
   const [handleChangeSearchbar, handleResetSearchbar] = createHandleChange(setSearchbarValues);
@@ -43,6 +52,12 @@ export const FiltersProvider = ({ children }) => {
       postponed: false,
       done: false,
       canceled: false
+    });
+  };
+  const handleChangeStatusChoose = (status) => {
+    setFilterOfStatuses({
+      ...filterOfStatuses,
+      [status]: !filterOfStatuses[status]
     });
   };
 
@@ -67,7 +82,9 @@ export const FiltersProvider = ({ children }) => {
         handleChangeFilterSumToValue,
         handleResetFilterSumToValue,
         filterOfStatuses,
-        handleResetAllFilters
+        handleResetAllFilters,
+        STATUSES_NAMES_TRANSLATION,
+        handleChangeStatusChoose
       }}
     >
       {children}
