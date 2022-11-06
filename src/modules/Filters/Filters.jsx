@@ -19,6 +19,7 @@ export const Filters = () => {
               value='Новый'
               postfix={<Icon className={styles.multiple} name='v_arrow' />}
               onChange={noop}
+              disabled
             />
           </div>
         }

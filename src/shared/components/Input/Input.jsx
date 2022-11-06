@@ -17,7 +17,7 @@ export const Input = ({
 }) => {
   const blockClass = classnames(styles._, className, {
     [styles.incorrect]: incorrect,
-    [styles.blocked]: disabled
+    [styles.blocked]: disabled && !postfix
   });
 
   return (
@@ -34,7 +34,7 @@ export const Input = ({
           disabled={disabled}
         />
         {value.length > 0 && !postfix && <Button className={styles.button} size='small' icon='x_medium' />}
-        {disabled && <Icon className={styles.icon} name='locked' />}
+        {disabled && !postfix && <Icon className={styles.icon} name='locked' />}
         {postfix && <div className={styles.postfix}>{postfix}</div>}
       </span>
     </label>
