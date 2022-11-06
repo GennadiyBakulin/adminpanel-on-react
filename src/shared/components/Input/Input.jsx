@@ -4,17 +4,20 @@ import styles from './Input.module.css';
 import { Icon } from '../Icon/Icon';
 import { Button } from '../Button/Button';
 
-const INPUT_STATES = {
-  incorrect: 'incorrect',
-  disabled: 'disabled',
-  multiple: 'multiple'
-};
-
-export const Input = ({ className, inputStates, title, placeholder, value = '', onChange, prefixText }) => {
+export const Input = ({
+  className,
+  incorrect,
+  disabled,
+  title,
+  placeholder,
+  value = '',
+  onChange,
+  prefixText,
+  postfix
+}) => {
   const blockClass = classnames(styles._, className, {
-    [styles.incorrect]: inputStates === INPUT_STATES.incorrect,
-    [styles.disabled]: inputStates === INPUT_STATES.disabled,
-    [styles.multiple]: inputStates === INPUT_STATES.multiple
+    [styles.incorrect]: incorrect,
+    [styles.blocked]: disabled
   });
 
   return (
@@ -28,11 +31,11 @@ export const Input = ({ className, inputStates, title, placeholder, value = '', 
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          disabled={inputStates === INPUT_STATES.disabled || inputStates === INPUT_STATES.multiple}
+          disabled={disabled}
         />
-        {inputStates === INPUT_STATES.incorrect && <Button className={styles.button} size='small' icon='x_medium' />}
-        {inputStates === INPUT_STATES.multiple && <Icon className={styles.icon} name='v_arrow' />}
-        {inputStates === INPUT_STATES.disabled && <Icon className={styles.icon} name='locked' />}
+        {value.length > 0 && !postfix && <Button className={styles.button} size='small' icon='x_medium' />}
+        {disabled && <Icon className={styles.icon} name='locked' />}
+        {postfix && <div className={styles.postfix}>{postfix}</div>}
       </span>
     </label>
   );
