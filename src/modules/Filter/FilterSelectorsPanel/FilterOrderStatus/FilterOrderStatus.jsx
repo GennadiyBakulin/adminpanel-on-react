@@ -10,8 +10,8 @@ export const FilterOrderStatus = () => {
   const allStatuses = Object.keys(filterOfStatuses);
   const checkedOnlyStatuses = allStatuses.filter((el) => filterOfStatuses[el]);
   const statusesValueForInput =
-    checkedOnlyStatuses.length === 0
-      ? 'статус не выбран'
+    checkedOnlyStatuses.length === 0 || checkedOnlyStatuses.length === allStatuses.length
+      ? 'Любой'
       : checkedOnlyStatuses.map((el) => STATUSES_NAMES_TRANSLATION[el]).join(', ');
   return (
     <Dropdown

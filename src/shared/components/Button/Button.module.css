@@ -40,7 +40,6 @@
   color: var(--color-style-white);
   stroke: var(--color-style-white);
   fill: var(--color-style-white);
-  opacity: 0.6;
 }
 
 .blackTransparent {
