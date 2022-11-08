@@ -3,9 +3,11 @@ import styles from './StatusChange.module.css';
 import { Button } from '../../shared/components';
 
 export const StatusChange = () => {
-	return (
-		<div className={styles._}>
-			<Button theme='blue' size='small' icon='pencil' value='Изменить статус' />
-		</div>
-	);
+  return (
+    <div className={styles._}>
+      <Button theme='blue' size='small' icon='pencil'>
+        Изменить статус
+      </Button>
+    </div>
+  );
 };

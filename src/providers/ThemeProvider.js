@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
 export const ThemeProvider = ({ children }) => {
-	const [theme, setTheme] = useState(themes.night);
+  const [theme, setTheme] = useState(themes.light);
 
-	document.documentElement.dataset.theme = theme;
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
 
-	return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 };

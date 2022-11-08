@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './AdminPage.module.css';
 import { Header } from '../modules/Header/Header';
-import { Search } from '../modules/Search/Search';
+import { Filter } from '../modules/Filter/Filter';
+import { FiltersProvider } from '../providers/FiltersProvider';
 import { Table } from '../modules/Table/Table';
 
 export const AdminPage = () => {
-	return (
-		<div className={styles._}>
-			<Header />
-			<Search />
-			<Table />
-		</div>
-	);
+  return (
+    <FiltersProvider>
+      <div className={styles._}>
+        <Header />
+        <Filter />
+        <Table />
+      </div>
+    </FiltersProvider>
+  );
 };

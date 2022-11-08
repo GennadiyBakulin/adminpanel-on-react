@@ -26,22 +26,11 @@
   background-color: var(--color-style-white);
   width: 100%;
   color: var(--color-style-black);
+  flex-grow: 1;
 }
 
 .fieldText::placeholder {
   color: var(--color-style-light-blue);
-}
-
-.field > .button {
-  position: absolute;
-  right: 0.25rem;
-  top: 0.25rem;
-}
-
-.field > .icon {
-  position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
 }
 
 .incorrect .field {
@@ -49,36 +38,38 @@
   background-color: var(--color-style-white);
 }
 
-.disabled .field {
+.blocked .field {
   border: 0.0625rem solid var(--color-style-blue);
 }
 
-.disabled .fieldText,
-.disabled .field {
+.blocked .fieldText,
+.blocked .field {
   background-color: var(--color-style-light-blue);
 }
 
-.disabled .fieldText ~ .icon {
+.blocked .fieldText ~ .icon {
   display: block;
 }
 
 .icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
   height: 1rem;
   stroke: var(--color-style-black);
   fill: var(--color-style-black);
 }
 
 .button {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
   stroke: var(--color-style-light-blue);
   fill: var(--color-style-light-blue);
 }
 
-.multiple .icon {
-  transform: rotate(90deg);
-  stroke: var(--color-style-light-blue);
-  fill: var(--color-style-light-blue);
-}
-
-.multiple:hover .icon {
-  transform: rotate(0deg);
+.postfix {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
 }

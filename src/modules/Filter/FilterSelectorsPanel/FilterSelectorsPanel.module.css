@@ -1,0 +1,10 @@
+._ {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+  height: 5.5rem;
+  background-color: var(--color-style-white-blue);
+  border-radius: 0.5rem;
+}

@@ -14,18 +14,18 @@ import { ReactComponent as IcoXLarge } from './assets/x-large.svg';
 import { ReactComponent as IcoXMedium } from './assets/x-medium.svg';
 
 export const icons = {
-	sun: IcoSun,
-	abort: IcoAbort,
-	bin: IcoBin,
-	checkmark: IcoCheckmark,
-	dot: IcoDot,
-	filter: IcoFilter,
-	locked: IcoLocked,
-	moon: IcoMoon,
-	pencil: IcoPencil,
-	refresh: IcoRefresh,
-	search: IcoSearch,
-	v_arrow: IcoVArrow,
-	x_large: IcoXLarge,
-	x_medium: IcoXMedium
+  sun: IcoSun,
+  abort: IcoAbort,
+  bin: IcoBin,
+  checkmark: IcoCheckmark,
+  dot: IcoDot,
+  filter: IcoFilter,
+  locked: IcoLocked,
+  moon: IcoMoon,
+  pencil: IcoPencil,
+  refresh: IcoRefresh,
+  search: IcoSearch,
+  v_arrow: IcoVArrow,
+  x_large: IcoXLarge,
+  x_medium: IcoXMedium
 };

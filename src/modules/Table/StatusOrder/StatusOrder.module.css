@@ -17,6 +17,12 @@
   fill: var(--color-style-blue);
 }
 
+.confirmed {
+  color: var(--color-style-black);
+  stroke: var(--color-style-green);
+  fill: var(--color-style-green);
+}
+
 .postponed {
   color: var(--color-style-black);
   stroke: var(--color-style-orange);
