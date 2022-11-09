@@ -40,8 +40,8 @@ export const ordersMock = [
     name: 'Тарасов Арсений Максимович',
     date: '28.07.2021 07:59',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 16012
   },
   {
@@ -58,8 +58,8 @@ export const ordersMock = [
     name: 'Соколова Варвара Кирилловна',
     date: '09.07.2022 04:00',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 16139
   },
   {
@@ -76,8 +76,8 @@ export const ordersMock = [
     name: 'Фролова Василиса Васильевна',
     date: '24.09.2022 08:09',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 16233
   },
   {
@@ -130,8 +130,8 @@ export const ordersMock = [
     name: 'Иванов Иван Артёмович',
     date: '28.10.2021 04:43',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 10836
   },
   {
@@ -220,8 +220,8 @@ export const ordersMock = [
     name: 'Лебедева Елена Владимировна',
     date: '29.03.2021 02:47',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 19876
   },
   {
@@ -238,8 +238,8 @@ export const ordersMock = [
     name: 'Федорова Полина Георгиевна',
     date: '21.03.2021 09:45',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 12306
   },
   {
@@ -301,8 +301,8 @@ export const ordersMock = [
     name: 'Новикова Виктория Данииловна',
     date: '30.04.2021 07:08',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 13191
   },
   {
@@ -310,8 +310,8 @@ export const ordersMock = [
     name: 'Березин Фёдор Даниилович',
     date: '12.03.2021 08:56',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 17713
   },
   {
@@ -355,8 +355,8 @@ export const ordersMock = [
     name: 'Кузина Мария Ильинична',
     date: '28.08.2021 12:32',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 10756
   },
   {
@@ -382,8 +382,8 @@ export const ordersMock = [
     name: 'Соколова Варвара Кирилловна',
     date: '01.10.2022 05:11',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 11593
   },
   {
@@ -400,8 +400,8 @@ export const ordersMock = [
     name: 'Николаева Вероника Фёдоровна',
     date: '08.04.2022 06:56',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 19600
   },
   {
@@ -490,8 +490,8 @@ export const ordersMock = [
     name: 'Лебедева Елена Владимировна',
     date: '02.03.2022 10:07',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 11487
   },
   {
@@ -571,8 +571,8 @@ export const ordersMock = [
     name: 'Анисимов Илья Евгеньевич',
     date: '16.05.2021 02:03',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 13293
   },
   {
@@ -598,8 +598,8 @@ export const ordersMock = [
     name: 'Воробьева София Романовна',
     date: '29.09.2022 03:56',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 17456
   },
   {
@@ -607,8 +607,8 @@ export const ordersMock = [
     name: 'Федотова Мария Константиновна',
     date: '05.04.2021 03:35',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 18998
   },
   {
@@ -625,8 +625,8 @@ export const ordersMock = [
     name: 'Михайлов Никита Маркович',
     date: '16.10.2022 04:03',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 16902
   },
   {
@@ -652,8 +652,8 @@ export const ordersMock = [
     name: 'Виноградов Александр Львович',
     date: '19.09.2021 05:58',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 17802
   },
   {
@@ -670,8 +670,8 @@ export const ordersMock = [
     name: 'Балашов Ярослав Вадимович',
     date: '20.08.2021 12:03',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 17045
   },
   {
@@ -832,8 +832,8 @@ export const ordersMock = [
     name: 'Кузнецова Полина Львовна',
     date: '15.01.2021 12:50',
     status: 'cancelled',
-    amount: '-',
-    positionCount: '-',
+    amount: 15,
+    positionCount: 15,
     orderNumber: 14313
   },
   {
