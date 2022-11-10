@@ -6,3 +6,7 @@
   gap: 0.25rem;
   cursor: pointer;
 }
+
+.hovering {
+  background: var(--color-style-shade-background);
+}

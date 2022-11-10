@@ -32,7 +32,7 @@ const tableHead = {
   }
 };
 export const TableHeader = () => {
-  const { handlerClickSortedOnColumns } = useContext(SortedContext);
+  const { handlerClickSortedOnColumns, columnSorted, directionSorted } = useContext(SortedContext);
 
   return (
     <div className={styles._}>
@@ -46,33 +46,51 @@ export const TableHeader = () => {
         className={styles.dateCell}
         name={tableHead.dateField.name}
         onClick={handlerClickSortedOnColumns}
+        click={columnSorted === tableHead.dateField.name}
       >
         {tableHead.dateField.text}
-        <Icon className={styles.icon} name='v_arrow' />
+        <Icon
+          className={!directionSorted && columnSorted === tableHead.dateField.name ? styles.iconReverse : styles.icon}
+          name='v_arrow'
+        />
       </TableHeaderCell>
       <TableHeaderCell
         className={styles.statusCell}
         name={tableHead.statusField.name}
         onClick={handlerClickSortedOnColumns}
+        click={columnSorted === tableHead.statusField.name}
       >
         {tableHead.statusField.text}
-        <Icon className={styles.icon} name='v_arrow' />
+        <Icon
+          className={!directionSorted && columnSorted === tableHead.statusField.name ? styles.iconReverse : styles.icon}
+          name='v_arrow'
+        />
       </TableHeaderCell>
       <TableHeaderCell
         className={styles.positionCell}
         name={tableHead.positionField.name}
         onClick={handlerClickSortedOnColumns}
+        click={columnSorted === tableHead.positionField.name}
       >
         {tableHead.positionField.text}
-        <Icon className={styles.icon} name='v_arrow' />
+        <Icon
+          className={
+            !directionSorted && columnSorted === tableHead.positionField.name ? styles.iconReverse : styles.icon
+          }
+          name='v_arrow'
+        />
       </TableHeaderCell>
       <TableHeaderCell
         className={styles.amountCell}
         name={tableHead.amountField.name}
         onClick={handlerClickSortedOnColumns}
+        click={columnSorted === tableHead.amountField.name}
       >
         {tableHead.amountField.text}
-        <Icon className={styles.icon} name='v_arrow' />
+        <Icon
+          className={!directionSorted && columnSorted === tableHead.amountField.name ? styles.iconReverse : styles.icon}
+          name='v_arrow'
+        />
       </TableHeaderCell>
       <TableHeaderCell className={styles.nameCell} name={tableHead.personNameField.name}>
         {tableHead.personNameField.text}

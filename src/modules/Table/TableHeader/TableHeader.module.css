@@ -12,9 +12,14 @@
 .icon {
   width: 1rem;
   height: 1rem;
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
 }
 
-._ .icon {
+.iconReverse {
+  width: 1rem;
+  height: 1rem;
+  rotate: 180deg;
   stroke: var(--color-style-white);
   fill: var(--color-style-white);
 }

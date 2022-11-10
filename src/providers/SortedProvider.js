@@ -3,16 +3,23 @@ import { SortedContext } from '../contexts/SortedContext';
 
 export const SortedProvider = ({ children }) => {
   const [columnSorted, setColumnSorted] = useState('');
+  const [directionSorted, setDirectionSorted] = useState(true);
 
   const handlerClickSortedOnColumns = (event) => {
-    setColumnSorted(event.target.id);
+    if (columnSorted === event.target.id) {
+      setDirectionSorted(!directionSorted);
+    } else {
+      setColumnSorted(event.target.id);
+      setDirectionSorted(true);
+    }
   };
 
   return (
     <SortedContext.Provider
       value={{
         handlerClickSortedOnColumns,
-        columnSorted
+        columnSorted,
+        directionSorted
       }}
     >
       {children}

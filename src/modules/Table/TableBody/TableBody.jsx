@@ -7,12 +7,18 @@ import { StatusOrder } from '../StatusOrder/StatusOrder';
 import { ordersMock } from '../mocks/ordersMock100Records';
 import { SortedContext } from '../../../contexts/SortedContext';
 
+let srt = ordersMock.concat();
 export const TableBody = () => {
-  const { columnSorted } = useContext(SortedContext);
-
-  const srt = ordersMock.sort((a, b) => {
-    return a[columnSorted] > b[columnSorted] ? 1 : -1;
-  });
+  const { columnSorted, directionSorted } = useContext(SortedContext);
+  if (directionSorted) {
+    srt = srt.sort((a, b) => {
+      return a[columnSorted] > b[columnSorted] ? 1 : -1;
+    });
+  } else {
+    srt = srt.sort((a, b) => {
+      return a[columnSorted] < b[columnSorted] ? 1 : -1;
+    });
+  }
   return (
     <div className={styles._}>
       {srt.map((order) => (
