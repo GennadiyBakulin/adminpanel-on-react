@@ -4,6 +4,7 @@
 }
 
 .area {
+  display: none;
   appearance: none;
   width: 1rem;
   height: 1rem;
@@ -25,7 +26,7 @@
   color: var(--color-style-blue);
 }
 
-.radio:hover,
+._:hover,
 .area:hover {
   cursor: pointer;
 }

@@ -1,2 +1,13 @@
 ._ {
+  top: -13.3rem;
+  left: -1rem;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+
+.radio {
+  justify-content: flex-start;
+  align-self: stretch;
+  height: 2rem;
+  padding: 0.5rem 1rem;
 }
