@@ -4,7 +4,7 @@ import { Checkbox } from '../../../shared/components';
 import { TableCell } from '../TableCell/TableCell';
 import { TableRow } from '../TableRow/TableRow';
 import { StatusOrder } from '../StatusOrder/StatusOrder';
-import { ordersMock } from '../mocks/ordersMock100Records';
+import { ordersMock } from '../../mocks/ordersMock100Records';
 import { SortedContext } from '../../../contexts/SortedContext';
 
 let srt = ordersMock.concat();
