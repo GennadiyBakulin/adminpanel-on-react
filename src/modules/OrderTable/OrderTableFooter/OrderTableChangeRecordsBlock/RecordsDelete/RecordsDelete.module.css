@@ -1,0 +1,11 @@
+._ {
+  top: -7.3rem;
+  right: -4.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+._ .button {
+  align-self: stretch;
+}
