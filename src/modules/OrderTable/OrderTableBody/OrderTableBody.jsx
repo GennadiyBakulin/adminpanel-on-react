@@ -18,14 +18,20 @@ export const OrderTableBody = () => {
       if (columnSorted === 'status') {
         return STATUSES_NAMES_TRANSLATION[a[columnSorted]] > STATUSES_NAMES_TRANSLATION[b[columnSorted]] ? 1 : -1;
       }
-      return a[columnSorted] > b[columnSorted] ? 1 : -1;
+      if (columnSorted === 'date') {
+        return Date.parse(a[columnSorted]) > Date.parse(b[columnSorted]) ? 1 : -1;
+      }
+      return +a[columnSorted] > +b[columnSorted] ? 1 : -1;
     });
   } else {
     srt = srt.sort((a, b) => {
       if (columnSorted === 'status') {
         return STATUSES_NAMES_TRANSLATION[a[columnSorted]] < STATUSES_NAMES_TRANSLATION[b[columnSorted]] ? 1 : -1;
       }
-      return a[columnSorted] < b[columnSorted] ? 1 : -1;
+      if (columnSorted === 'date') {
+        return Date.parse(a[columnSorted]) < Date.parse(b[columnSorted]) ? 1 : -1;
+      }
+      return +a[columnSorted] < +b[columnSorted] ? 1 : -1;
     });
   }
   return (

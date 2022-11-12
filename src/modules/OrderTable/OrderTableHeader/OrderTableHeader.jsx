@@ -51,7 +51,7 @@ export const OrderTableHeader = () => {
       >
         {tableHead.dateField.text}
         <Icon
-          className={!directionSorted && columnSorted === tableHead.dateField.name ? styles.iconReverse : styles.icon}
+          className={directionSorted && columnSorted === tableHead.dateField.name ? styles.iconReverse : styles.icon}
           name='v_arrow'
         />
       </TableHeaderCell>
@@ -63,7 +63,7 @@ export const OrderTableHeader = () => {
       >
         {tableHead.statusField.text}
         <Icon
-          className={!directionSorted && columnSorted === tableHead.statusField.name ? styles.iconReverse : styles.icon}
+          className={directionSorted && columnSorted === tableHead.statusField.name ? styles.iconReverse : styles.icon}
           name='v_arrow'
         />
       </TableHeaderCell>
@@ -76,7 +76,7 @@ export const OrderTableHeader = () => {
         {tableHead.positionField.text}
         <Icon
           className={
-            !directionSorted && columnSorted === tableHead.positionField.name ? styles.iconReverse : styles.icon
+            directionSorted && columnSorted === tableHead.positionField.name ? styles.iconReverse : styles.icon
           }
           name='v_arrow'
         />
@@ -89,7 +89,7 @@ export const OrderTableHeader = () => {
       >
         {tableHead.amountField.text}
         <Icon
-          className={!directionSorted && columnSorted === tableHead.amountField.name ? styles.iconReverse : styles.icon}
+          className={directionSorted && columnSorted === tableHead.amountField.name ? styles.iconReverse : styles.icon}
           name='v_arrow'
         />
       </TableHeaderCell>

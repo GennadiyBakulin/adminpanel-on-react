@@ -6,10 +6,10 @@ export const SortedProvider = ({ children }) => {
   const [directionSorted, setDirectionSorted] = useState(true);
 
   const handlerClickSortedOnColumns = (event) => {
-    if (columnSorted === event.target.id) {
+    if (columnSorted === event.currentTarget.id) {
       setDirectionSorted(!directionSorted);
     } else {
-      setColumnSorted(event.target.id);
+      setColumnSorted(event.currentTarget.id);
       setDirectionSorted(true);
     }
   };
