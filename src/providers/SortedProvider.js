@@ -5,11 +5,11 @@ export const SortedProvider = ({ children }) => {
   const [columnSorted, setColumnSorted] = useState('');
   const [directionSorted, setDirectionSorted] = useState(true);
 
-  const handlerClickSortedOnColumns = (event) => {
-    if (columnSorted === event.currentTarget.id) {
+  const handleClickSort = (key) => {
+    if (columnSorted === key) {
       setDirectionSorted(!directionSorted);
     } else {
-      setColumnSorted(event.currentTarget.id);
+      setColumnSorted(key);
       setDirectionSorted(true);
     }
   };
@@ -17,7 +17,7 @@ export const SortedProvider = ({ children }) => {
   return (
     <SortedContext.Provider
       value={{
-        handlerClickSortedOnColumns,
+        handleClickSort,
         columnSorted,
         directionSorted
       }}

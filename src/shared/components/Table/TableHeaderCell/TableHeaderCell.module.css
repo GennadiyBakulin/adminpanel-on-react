@@ -7,6 +7,21 @@
   cursor: pointer;
 }
 
-.hovering {
+.active {
   background: var(--color-style-shade-background);
+}
+
+.clickable:hover {
+  background: var(--color-style-shade-background);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  stroke: var(--color-style-white);
+  fill: var(--color-style-white);
+}
+
+.direction {
+  rotate: 180deg;
 }

@@ -1,18 +1,18 @@
 import React from 'react';
-import styles from './OrderTable.module.css';
 import { OrderTableHeader } from './OrderTableHeader/OrderTableHeader';
 import { OrderTableBody } from './OrderTableBody/OrderTableBody';
 import { OrderTableFooter } from './OrderTableFooter/OrderTableFooter';
 import { SortedProvider } from '../../providers/SortedProvider';
+import { Table } from '../../shared/components/Table/Table';
 
 export const OrderTable = () => {
   return (
     <SortedProvider>
-      <div className={styles._}>
+      <Table>
         <OrderTableHeader />
         <OrderTableBody />
         <OrderTableFooter />
-      </div>
+      </Table>
     </SortedProvider>
   );
 };

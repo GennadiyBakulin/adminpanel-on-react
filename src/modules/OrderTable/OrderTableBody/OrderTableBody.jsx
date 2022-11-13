@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import styles from './OrderTableBody.module.css';
+import styles from '../OrderTable.module.css';
 import { Checkbox } from '../../../shared/components';
 import { TableCell } from '../../../shared/components/Table/TableCell/TableCell';
 import { TableRow } from '../../../shared/components/Table/TableRow/TableRow';
@@ -9,12 +9,12 @@ import { SortedContext } from '../../../contexts/SortedContext';
 import { FiltersContext } from '../../../contexts/FiltersContext';
 import { TableBody } from '../../../shared/components/Table/TableBody/TableBody';
 
-let srt = ordersMock.concat();
+let ordersMockCopy = ordersMock.concat();
 export const OrderTableBody = () => {
   const { STATUSES_NAMES_TRANSLATION } = useContext(FiltersContext);
   const { columnSorted, directionSorted } = useContext(SortedContext);
   if (directionSorted) {
-    srt = srt.sort((a, b) => {
+    ordersMockCopy = ordersMockCopy.sort((a, b) => {
       if (columnSorted === 'status') {
         return STATUSES_NAMES_TRANSLATION[a[columnSorted]] > STATUSES_NAMES_TRANSLATION[b[columnSorted]] ? 1 : -1;
       }
@@ -24,7 +24,7 @@ export const OrderTableBody = () => {
       return +a[columnSorted] > +b[columnSorted] ? 1 : -1;
     });
   } else {
-    srt = srt.sort((a, b) => {
+    ordersMockCopy = ordersMockCopy.sort((a, b) => {
       if (columnSorted === 'status') {
         return STATUSES_NAMES_TRANSLATION[a[columnSorted]] < STATUSES_NAMES_TRANSLATION[b[columnSorted]] ? 1 : -1;
       }
@@ -35,9 +35,9 @@ export const OrderTableBody = () => {
     });
   }
   return (
-    <TableBody className={styles._}>
-      {srt.map((order) => (
-        <TableRow className={styles.row} key={order.id} id={order.id}>
+    <TableBody>
+      {ordersMockCopy.map((order) => (
+        <TableRow key={order.id}>
           <TableCell className={styles.checkboxCell}>
             <Checkbox />
           </TableCell>

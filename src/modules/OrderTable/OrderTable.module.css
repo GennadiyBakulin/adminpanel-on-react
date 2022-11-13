@@ -1,7 +1,27 @@
-._ {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow: hidden;
+.checkboxCell {
+  min-width: 2rem;
+}
+
+.idCell {
+  min-width: 6.75rem;
+}
+
+.dateCell {
+  min-width: 11rem;
+}
+
+.statusCell {
+  min-width: 11rem;
+}
+
+.positionCell {
+  min-width: 6rem;
+}
+
+.amountCell {
+  min-width: 8rem;
+}
+
+.nameCell {
+  width: 100%;
 }
