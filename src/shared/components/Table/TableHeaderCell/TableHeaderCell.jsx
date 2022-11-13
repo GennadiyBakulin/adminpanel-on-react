@@ -3,13 +3,18 @@ import classnames from 'classnames';
 import styles from './TableHeaderCell.module.css';
 import { Icon } from '../../Icon/Icon';
 
+export const SORT_DIRECTION = {
+  ascending: 'ascending',
+  descending: 'descending'
+};
+
 export const TableHeaderCell = ({ className, active, direction, children, onClick }) => {
   const blockClass = classnames(styles._, className, {
     [styles.active]: active,
     [styles.clickable]: onClick
   });
   const iconClassNames = classnames(styles.icon, {
-    [styles.direction]: direction === true
+    [styles.direction]: direction === SORT_DIRECTION.descending
   });
 
   return (

@@ -13,7 +13,7 @@ let ordersMockCopy = ordersMock.concat();
 export const OrderTableBody = () => {
   const { STATUSES_NAMES_TRANSLATION } = useContext(FiltersContext);
   const { columnSorted, directionSorted } = useContext(SortedContext);
-  if (directionSorted) {
+  if (directionSorted === 'descending') {
     ordersMockCopy = ordersMockCopy.sort((a, b) => {
       if (columnSorted === 'status') {
         return STATUSES_NAMES_TRANSLATION[a[columnSorted]] > STATUSES_NAMES_TRANSLATION[b[columnSorted]] ? 1 : -1;

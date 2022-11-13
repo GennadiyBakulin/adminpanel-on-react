@@ -2,12 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './TableCell.module.css';
 
-export const TableCell = ({ className, id, children }) => {
+export const TableCell = ({ className, children }) => {
   const blockClass = classnames(styles._, className);
 
-  return (
-    <div className={blockClass} id={id}>
-      {children}
-    </div>
-  );
+  return <div className={blockClass}>{children}</div>;
 };

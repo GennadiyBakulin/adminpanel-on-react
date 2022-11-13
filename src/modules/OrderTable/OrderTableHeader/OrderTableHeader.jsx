@@ -44,7 +44,7 @@ export const OrderTableHeader = () => {
         className={styles.dateCell}
         onClick={() => handleClickSort(tableHead.dateField.name)}
         active={columnSorted === tableHead.dateField.name}
-        direction={directionSorted && columnSorted === tableHead.dateField.name}
+        direction={tableHead.dateField.name === columnSorted && directionSorted}
       >
         {tableHead.dateField.text}
       </TableHeaderCell>
@@ -52,7 +52,7 @@ export const OrderTableHeader = () => {
         className={styles.statusCell}
         onClick={() => handleClickSort(tableHead.statusField.name)}
         active={columnSorted === tableHead.statusField.name}
-        direction={directionSorted && columnSorted === tableHead.statusField.name}
+        direction={tableHead.statusField.name === columnSorted && directionSorted}
       >
         {tableHead.statusField.text}
       </TableHeaderCell>
@@ -60,7 +60,7 @@ export const OrderTableHeader = () => {
         className={styles.positionCell}
         onClick={() => handleClickSort(tableHead.positionField.name)}
         active={columnSorted === tableHead.positionField.name}
-        direction={directionSorted && columnSorted === tableHead.positionField.name}
+        direction={tableHead.positionField.name === columnSorted && directionSorted}
       >
         {tableHead.positionField.text}
       </TableHeaderCell>
@@ -68,7 +68,7 @@ export const OrderTableHeader = () => {
         className={styles.amountCell}
         onClick={() => handleClickSort(tableHead.amountField.name)}
         active={columnSorted === tableHead.amountField.name}
-        direction={directionSorted && columnSorted === tableHead.amountField.name}
+        direction={tableHead.amountField.name === columnSorted && directionSorted}
       >
         {tableHead.amountField.text}
       </TableHeaderCell>

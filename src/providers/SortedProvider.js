@@ -3,14 +3,15 @@ import { SortedContext } from '../contexts/SortedContext';
 
 export const SortedProvider = ({ children }) => {
   const [columnSorted, setColumnSorted] = useState('');
-  const [directionSorted, setDirectionSorted] = useState(true);
+  const [directionSorted, setDirectionSorted] = useState('ascending');
 
   const handleClickSort = (key) => {
     if (columnSorted === key) {
-      setDirectionSorted(!directionSorted);
+      if (directionSorted === 'ascending') setDirectionSorted('descending');
+      else setDirectionSorted('ascending');
     } else {
       setColumnSorted(key);
-      setDirectionSorted(true);
+      setDirectionSorted('ascending');
     }
   };
 
